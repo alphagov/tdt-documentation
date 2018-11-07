@@ -1,0 +1,19 @@
+# Host to use for canonical URL generation (without trailing slash)
+
+# Header-related options
+show_govuk_logo: true
+service_name: GDS documentation tool 
+service_link: 
+phase: Beta 
+
+# Links to show on right-hand-side of header
+header_links:
+
+# Tracking ID from Google Analytics (e.g. UA-XXXX-Y)
+ga_tracking_id: UA-86101042-3
+
+google_site_verification: "IJ5HOXpZrISM6la-YO_iX0rBUC5YFftpexygcKLsNs4"
+
+# Multi-page options
+multipage_nav: true
+collapsible_nav: true
