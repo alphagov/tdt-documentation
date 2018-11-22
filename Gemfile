@@ -9,3 +9,6 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'govuk_tech_docs', '~> 1.6.1'
 
 gem 'therubyracer'
+
+gem 'middleman-gh-pages'
+
