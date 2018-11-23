@@ -6,5 +6,3 @@ applications:
   buildpack: staticfile_buildpack
   routes:
     - route: 	tdt-documentation.london.cloudapps.digital
-  services:
-    - logit-ssl-drain
