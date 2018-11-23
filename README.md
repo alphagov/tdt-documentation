@@ -1,6 +1,6 @@
 # Documentation for the GDS technical documentation tool (GDS TDT)
 
-[![Build Status](https://travis-ci.com/alphagov/tdt-documentation.svg?branch=master)](https://travis-ci.com/alphagov/tdt-documentation)
+[![Build Status](https://travis-ci.org/alphagov/tdt-documentation.svg?branch=master)](https://travis-ci.org/alphagov/tdt-documentation)
 
 ## Code of conduct
 
