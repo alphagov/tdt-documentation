@@ -1,25 +1,13 @@
-env:
-  global:
-  - CF_API="https://api.cloud.service.gov.uk"
-  - CF_ORG="openregister"
-  - CF_SPACE="docs"
-  - CF_USERNAME="register-design-authority@digital.cabinet-office.gov.uk"
-
-branches:
-  only:
-  - master
-
-before_deploy:
-  - export PATH=$HOME:$PATH
-  # Install CloudFoundry
-  - travis_retry curl -L -o $HOME/cf.tgz "https://cli.run.pivotal.io/stable?release=linux64-binary&source=github"
-  - tar xzvf $HOME/cf.tgz -C $HOME
-  # Install Autopilot plugin for zero-downtime-push
-  - travis_retry cf install-plugin autopilot -f -r CF-Community
-
+language: ruby
+cache: bundler
 script: bundle exec middleman build
-
 deploy:
-  - provider: script
-    script: ./script/deploy
-    skip_cleanup: true
+  provider: cloudfoundry
+  api: https://api.cloud.service.gov.uk
+  username: tech-doc-tool+paas-bot@digital.cabinet-office.gov.uk
+  password:
+    secure: uKoygsVHxzEUD/cSLRy+pX3WFkuxKZAsCXWUX5wm9SaK7WIlP7N/iHz9fDpYwNRUtoUJBZ+YMT7vFxQj5qUwlfEpV/MWE1xGmD4z3zSvSB4jDu0o2CZz+Bfjtlibv1N1Ry10Ui436Rd3rtWrbb08o7aXVXj+JMnIv2Aw5F6qDk/qhdpgoAVOFzkJ7dOCML03Zuau0UK/Oy+8iKLdFIjfjsgb0S9taFipmWSb6swax0Gwks8zR/R5S1X5ezbkyABHDtzbisKVc+wdTw1nsliEjAJubc/sxiRVDOCPHzghV2IXas60x6PG7ynhHjM9LO8CmtZCK6ieOkPIFEYPlCS4RO4v4PwbblGhvlhXkyM+90h8YTVmpzYJy8J0vCSRmphvzmGFH5SjOMt8r4aLy3DNeeq1QvZAaEVZ2IpvEYqKyjoKZAsyGvnjflZmtbkLoxncCgi/rbQ6FgWPhNqj0TnjWKl2chls0031ClYLbz2KOCZzclnynfhq4ejyvdqm6pXTDN6bu0OJuJOYPZgaRsVdxik/EoOqr8Dtd57y0lQd8eh3KPyYZJMbg1Wbdz6rpoCzqpP95G3/wLUjE8e2qOjgmFJKcRLfZyg4oIU/5a8YV5ng0B58Km0iVk09wwgHFci52mAY8daxgzj2VlIy1W9ES3AxW7OBYhWkFa/xnV3L7Gg=
+  organization: gds-tech-writers
+  space: sandbox
+  on:
+    repo: alphagov/tdt-documentation
