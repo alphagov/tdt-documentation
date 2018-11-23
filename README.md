@@ -1,8 +1,10 @@
 # Documentation for the GDS technical documentation tool (GDS TDT)
 
+[![Build Status](https://travis-ci.com/alphagov/tdt-documentation.svg?branch=master)](https://travis-ci.com/alphagov/tdt-documentation)
+
 ## Code of conduct
 
-Please refer to the `alphagov` [code of conduct](https://github.com/alphagov/code-of-conduct). 
+Please refer to the `alphagov` [code of conduct](https://github.com/alphagov/code-of-conduct).
 
 ## Licence
 
