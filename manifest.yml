@@ -1,10 +1,10 @@
 ---
 applications:
-- name: registers-docs
+- name: tdt-documentation
   memory: 64M
   instances: 2
   buildpack: staticfile_buildpack
   routes:
-    - route: docs.registers.service.gov.uk
+    - route: 	tdt-documentation.london.cloudapps.digital
   services:
     - logit-ssl-drain
