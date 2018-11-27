@@ -17,3 +17,11 @@ google_site_verification: "IJ5HOXpZrISM6la-YO_iX0rBUC5YFftpexygcKLsNs4"
 # Multi-page options
 multipage_nav: true
 collapsible_nav: true
+
+# Show links to contribute on GitHub
+show_contribution_banner: true
+github_repo: alphagov/gds-way
+
+# Ownership for page reviews
+default_owner_slack: '#docs-repos'
+owner_slack_workspace: gds
