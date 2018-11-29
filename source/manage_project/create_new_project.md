@@ -17,15 +17,15 @@
     
 ## Update your version of the tech doc template
 
-Open the command line interface.
+1. Open the command line interface.
 
-Navigate to the new project folder.
+1. Navigate to the new project folder.
 
-Run the following in the command line to update all the gems inside the repo:
+1. Run the following in the command line to update all the gems inside the repo:
 
-```
-bundle install
-```
+    ```
+    bundle install
+    ```
 
 ## View your new project
 
