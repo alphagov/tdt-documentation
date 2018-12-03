@@ -29,9 +29,7 @@
 
 ## View your new project
 
-1. Go to Finder (Mac) or Explorer (Windows) or equivalent.
+Navigate to the created documentation repo folder.
 
-1. Check for the folder with your project name.
-
-The folder will have multiple pre-populated files. You will only need to amend the `source/documentation` folder and the `config.yml` file.
+The folder will have multiple pre-populated files. You will only need to amend the content folder and the `config.yml` file. By default, the content folder is `source/documentation`.
 
