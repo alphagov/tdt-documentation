@@ -24,7 +24,7 @@ You must amend the documentation repo folder structure to reflect this structure
 
 ### Amend the tech-docs.yml file
 
-Add this to the end of your project’s `.../config/tech-docs.yml` file, or set it to true if it is already there:
+Add this to the end of your project’s `tech-docs.yml` file, or set it to true if it is already there:
 
 ```
 # Enable multipage navigation in the sidebar
@@ -98,12 +98,13 @@ You must amend the documentation repo folder structure to reflect this structure
 
 ### Amend the tech-docs.yml file
 
-Add this to the end of your project’s `.../config/tech-docs.yml` file, or set it to true if it is already there:
+Add this to the end of your project’s `tech-docs.yml` file, or set it to true if it is already there:
 
 ```
 # Enable multipage navigation in the sidebar
 multipage_nav: true
 ```
+
 ### Create multiple .html.md.erb files
 
 Basic multipage requires multiple `.html.md.erb` files in the tech docs repo __source__ folder.
