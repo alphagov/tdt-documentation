@@ -17,16 +17,11 @@ Email [sd-community@digital.cabinet-office.gov.uk](mailto:sd-community@digital.c
 
 ## Install text editor
 
-You should install a text editor to edit your content, for example:
-
-- [Atom](https://atom.io/) [external link]
-- [SublimeText](https://www.sublimetext.com/) [external link]
-- [Notepad++](https://notepad-plus-plus.org/) [external link]
-- [TextWrangler](https://www.barebones.com/products/textwrangler/) [external link]
-
-You can edit your content using an internal text editor such as [VIM](https://www.vim.org/) [external link].
+You should install a text editor to edit your content.
 
 ## Install Xcode command line interface tools
+
+These instructions assume that you are the Managed Software Centre on your Mac.
 
 1. Go to the Managed Software Centre on your Mac.
 1. Select Updates.
@@ -45,7 +40,7 @@ OR
 
 [Ruby](https://www.ruby-lang.org/en/) [external link] is installed globally. This means that you can run the install command from any location on your local machine rather than from within a specific folder.
 
-You should install Ruby using [Ruby Version Manager](https://rvm.io/) [external link].
+You can install Ruby in multiple ways, for example using [Ruby Version Manager](https://rvm.io/) (RVM) or [rbenv](https://github.com/rbenv/rbenv) [external links]. These instructions assume you are using RVM.
 
 1. Run the following in the command line interface to install the ruby version manager:
 
@@ -54,8 +49,6 @@ You should install Ruby using [Ruby Version Manager](https://rvm.io/) [external 
     ```
 
 1. Run `rvm install ruby-x.x.x` to install the latest version of [Ruby](https://www.ruby-lang.org/en/). The current x.x.x is `2.5.1`.
-
->You can also use [rbenv](https://github.com/rbenv/rbenv) [external link].
 
 ## Install Bundler
 
