@@ -4,7 +4,7 @@ This enables the left hand navigation to expand and collapse.
 
 ## Amend the tech-docs.yml file
 
-Add the following to the end of your project’s `.../config/tech-docs.yml` file, or set it to true if it is already there:
+Add the following your project's `tech-docs.yml` file, or set it to true if it is already there:
 
 ```
 # Enable collapsible navigation in the sidebar
