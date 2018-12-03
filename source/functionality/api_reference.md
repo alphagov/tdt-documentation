@@ -24,7 +24,7 @@ api_path: https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/exa
 
 ## Amend the content file
 
-Add the following code to the content file that you want to output the API information to:
+Add the following line to the content file that you want to output the API information to:
 
 ```
 api>
@@ -32,4 +32,6 @@ api>
 
 You can specify individual endpoints to be outputted rather than all API information, for example::
 
+```
 api> /pets
+```
