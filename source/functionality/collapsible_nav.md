@@ -1,4 +1,4 @@
-# Enable search
+# Enable collapsible navigation
 
 This enables the left hand navigation to expand and collapse.
 
