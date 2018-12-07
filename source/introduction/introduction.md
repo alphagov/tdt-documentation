@@ -13,3 +13,5 @@ It is suitable for multiple styles of documentation, including API documentation
 It promotes consistency on technical documentation which should reassure end users.
 
 It helps technical writers manage their technical content using the [‘docs as code’](https://gdstechnology.blog.gov.uk/2017/08/25/why-we-use-a-docs-as-code-approach-for-technical-documentation/) approach.
+
+This documentation is currently under construction.
