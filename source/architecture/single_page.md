@@ -18,13 +18,19 @@ This is suitable for documentation sites that have do not have a lot of content,
 
 1. Select the `index.html.md.erb` file.
 
-1. Amend the `index.html.md.erb` file, adding a `<%= partial` line for each content file that makes up your overall documentation site. 
+1. Amend the `index.html.md.erb` file. 
 
-For example, you have three content files:
+    You can either add a `<%= partial` line that references each content file that makes up your overall documentation site, or add the content into the `index.html.md.erb` file directly.
+
+### Add partial lines 
+
+In this example, you have three content files:
   
 - an introduction named `index.md` in the `documentation` folder
 - a "Who is this documentation for?" section named `who-docs.md` in the `documentation/introduction` folder
 - a "Set up the API client" section named `set_up_client` in the `documentation/introduction` folder
+
+The `index.html.md.erb` file would look like this:
 
 ```
 ---
@@ -34,7 +40,8 @@ title: "GOV.UK Technical Documentation"
 <%= partial 'documentation/index' %>
 <%= partial 'documentation/introduction/who_docs' %>
 <%= partial 'documentation/introduction/set_up_client' %>
-  
+```
+
 This `index.html.md.erb` will build a documentation site with the following structure:
 
 - Introducution
