@@ -2,11 +2,11 @@
 
 ## What is the technical documentation tool?
 
-This tool is a template for technical and developer documentation. 
+This tool is a template for technical and developer documentation.
 
-It uses the [Middleman static site generator](https://middlemanapp.com/) [external link] to convert markdown files into HTML-based documentation that looks consistent with the GOV.UK and GDS style and format. 
+It uses the [Middleman static site generator](https://middlemanapp.com/) [external link] to convert markdown files into HTML-based documentation that looks consistent with the GOV.UK and GDS style and format.
 
-It is suitable for multiple styles of documentation, including API documentation. 
+It is suitable for multiple styles of documentation, including API documentation.
 
 ## Why should you use this?
 
