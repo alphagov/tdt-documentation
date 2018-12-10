@@ -37,3 +37,6 @@ enable_search: true
 # Ownership for page reviews
 default_owner_slack: '#docs-repos'
 owner_slack_workspace: gds
+
+# Enable GOV.UK crown logo
+show_govuk_logo: false
