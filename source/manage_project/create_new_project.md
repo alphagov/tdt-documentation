@@ -9,9 +9,9 @@
     ```
     Middleman init PROJECT_NAME -T alphagov/tech-docs-template
     ```
-    where PROJECT_NAME is the name of your project.
+    where `PROJECT_NAME` is the name of your project.
     
-1. Answer Yes or No to the installation questions.
+1. Answer __Yes__ or __No__ to the installation questions.
 
 1. Project creation is complete when you see `Bundle complete!`.
     
