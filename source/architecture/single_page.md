@@ -6,7 +6,7 @@ This is suitable for documentation sites that have do not have a lot of content,
 
 ## Organise content files 
 
-1. Create [link] the content files for your documentation site.
+1. [Create](create_new_project.html#create-a-new-project) the content files for your documentation site.
 
 1. Amend [link] your content files to ready them for your documentation site.
 
@@ -20,7 +20,7 @@ This is suitable for documentation sites that have do not have a lot of content,
 
 1. Amend the `index.html.md.erb` file. 
 
-    You can either add a `<%= partial` line that references each content file that makes up your overall documentation site, or add the content into the `index.html.md.erb` file directly.
+    You can either [add a `<%= partial` line](single_page.html#add-partial-lines) that references each content file that makes up your overall documentation site, or add the content into the `index.html.md.erb` file directly.
 
 ### Add partial lines 
 
@@ -32,7 +32,7 @@ In this example, you have three content files:
 
 The `index.html.md.erb` file would look like this:
 
-```
+```bash
 ---
 title: "GOV.UK Technical Documentation"
 ---
