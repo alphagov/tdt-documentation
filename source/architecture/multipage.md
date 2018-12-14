@@ -45,7 +45,7 @@ Additionally, the tech doc repo must have at least one `.html.md.erb` file in th
 
     For example:
 
-    ```
+    ```bash
     ---
     title: "Product Technical Documentation"
     ---
@@ -53,7 +53,7 @@ Additionally, the tech doc repo must have at least one `.html.md.erb` file in th
 
     becomes
 
-    ```
+    ```bash
     ---
     title: "Product Technical Documentation"
     weight: 10
@@ -63,13 +63,17 @@ Additionally, the tech doc repo must have at least one `.html.md.erb` file in th
     Higher weights mean that the content is lower down in the documentation hierarchy. An easy way to remember this is to think “heavier pages sink to the bottom”.
   
     For example, a single `.html.md.erb` file becomes multiple `.html.md.erb` files:
-  
+    
+    <div style="height:1px;font-size:1px;">&nbsp;</div>
+    
     |Single page|Multipage|
     |:---|:---|
     |---<br>weight: 10<br>title: "Product Technical Documentation"<br>---<br><br><%= partial 'documentation/index' %>|---<br>weight: 10<br>title: "Product Technical Documentation"<br>---<br><br><%= partial 'documentation/index' %>|
     ||---<br>weight: 10<br>title: "Product Technical Documentation"<br>---<br><br><%= partial 'documentation/index' %>|
     ||---<br>weight: 20<br>title: "Product Technical Documentation"<br>---<br><br><%= partial 'documentation/start' %>|
     ||---<br>weight: 30<br>title: "Product Technical Documentation"<br>---<br><br><%= partial 'documentation/users' %>|
+  
+    <div style="height:1px;font-size:1px;">&nbsp;</div>
   
 ### Add H1 heading if required
 
@@ -119,7 +123,7 @@ Additionally, the tech doc repo must have at least one `.html.md.erb` file in th
 
     For example:
 
-    ```
+    ```bash
     ---
     title: "Product Technical Documentation"
     ---
@@ -127,7 +131,7 @@ Additionally, the tech doc repo must have at least one `.html.md.erb` file in th
 
     becomes
 
-    ```
+    ```bash
     ---
     title: "Product Technical Documentation"
     weight: 10
@@ -138,12 +142,16 @@ Additionally, the tech doc repo must have at least one `.html.md.erb` file in th
   
     For example, a single `.html.md.erb` file becomes multiple `.html.md.erb` files:
   
+    <div style="height:1px;font-size:1px;">&nbsp;</div>
+  
     |Single page|Multipage|
     |:---|:---|
     |---<br>weight: 10<br>title: "Product Technical Documentation"<br>---<br><br><%= partial 'documentation/index' %>|---<br>weight: 10<br>title: "Product Technical Documentation"<br>---<br><br><%= partial 'documentation/index' %>|
     ||---<br>weight: 10<br>title: "Product Technical Documentation"<br>---<br><br><%= partial 'documentation/index' %>|
     ||---<br>weight: 20<br>title: "Product Technical Documentation"<br>---<br><br><%= partial 'documentation/start' %>|
     ||---<br>weight: 30<br>title: "Product Technical Documentation"<br>---<br><br><%= partial 'documentation/users' %>|
+  
+    <div style="height:1px;font-size:1px;">&nbsp;</div>
   
 ### Add H1 heading if required
 
