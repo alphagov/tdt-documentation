@@ -14,11 +14,15 @@ You can split the content into multiple individual pages. An example is the [GOV
 
 A typical single page documentation repo has this folder structure:
 
-[IMAGE]
+<br/><br/>
+![](/diagrams/Single_page.svg)
+<br/><br/>
 
 A basic multipage documentation repo can have this structure:
 
-[IMAGE]
+<br/><br/>
+![](/diagrams/Basic_multipage.svg)
+<br/><br/>
 
 You must amend the documentation repo folder structure to reflect this structure.
 
@@ -92,11 +96,15 @@ You can split the content into multiple individual pages, and can have pages "ne
 
 A typical single page documentation repo has this folder structure:
 
-[IMAGE]
+<br/><br/>
+![](/diagrams/Single_page.svg)
+<br/><br/>
 
 A nested multipage documentation repo can have this structure:
 
-[IMAGE]
+<br/><br/>
+![](/diagrams/Nested_multipage.svg)
+<br/><br/>
 
 You must amend the documentation repo folder structure to reflect this structure.
 
