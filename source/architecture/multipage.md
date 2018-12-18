@@ -10,6 +10,15 @@ You should use the search feature [link] with multipage documentation sites.
 
 You can split the content into multiple individual pages. An example is the [GOV.UK PaaS technical documentation](https://docs.cloud.service.gov.uk/).
 
+### Amend the tech-docs.yml file
+
+Add this to your project’s `tech-docs.yml` file, or set it to true if it is already there:
+
+```
+# Enable multipage navigation in the sidebar
+multipage_nav: true
+```
+
 ### Repo folder structure
 
 A typical single page documentation repo has this folder structure:
@@ -25,15 +34,6 @@ A basic multipage documentation repo can have this structure:
 <br/><br/>
 
 You must amend the documentation repo folder structure to reflect this structure.
-
-### Amend the tech-docs.yml file
-
-Add this to your project’s `tech-docs.yml` file, or set it to true if it is already there:
-
-```
-# Enable multipage navigation in the sidebar
-multipage_nav: true
-```
 
 ### Create multiple .html.md.erb files
 
@@ -89,8 +89,17 @@ If there is an H1 heading in both, you will see two H1s when the documentation s
 
 You can split the content into multiple individual pages, and can have pages "nested" within one another. Two examples:
 
-- [GOV.UK PaaS technical documentation - Deploying services](https://docs.cloud.service.gov.uk/deploying_services/).
+- [GOV.UK PaaS technical documentation - Deploying services](https://docs.cloud.service.gov.uk/deploying_services/)
 - [GOV.UK Pay technical documentation - Switching to live](https://docs.payments.service.gov.uk/switching_to_live/#switching-to-live)
+
+### Amend the tech-docs.yml file
+
+Add this to your project’s `tech-docs.yml` file, or set it to true if it is already there:
+
+```
+# Enable multipage navigation in the sidebar
+multipage_nav: true
+```
 
 ### Repo folder structure
 
@@ -107,15 +116,6 @@ A nested multipage documentation repo can have this structure:
 <br/><br/>
 
 You must amend the documentation repo folder structure to reflect this structure.
-
-### Amend the tech-docs.yml file
-
-Add this to your project’s `tech-docs.yml` file, or set it to true if it is already there:
-
-```
-# Enable multipage navigation in the sidebar
-multipage_nav: true
-```
 
 ### Create multiple .html.md.erb files
 
