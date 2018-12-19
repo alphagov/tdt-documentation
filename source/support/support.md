@@ -1,8 +1,11 @@
 # Support
 
+## Report issues 
+
 Report any problems or issues by:
 
 - contacting the GDS technical writing community on [email](mailto:technical-writers@digital.cabinet-office.gov.uk) or [slack](https://gds.slack.com/messages/CAD579Y1X/)
+- posting in the [tech docs format](https://gds.slack.com/messages/CADK8N58B/) slack channel
 - opening an issue on the [tech docs template repo](https://github.com/alphagov/tech-docs-template/issues)
 
 ## Github repos
