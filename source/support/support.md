@@ -17,6 +17,8 @@ The repos are:
 
 ## Current documentation
 
+<div style="height:1px;font-size:1px;">&nbsp;</div>
+
 ||Documentation|Github repo|
 |:---|:---|:---|
 |GDS Way|[https://gds-way.cloudapps.digital](https://gds-way.cloudapps.digital)|[https://github.com/alphagov/gds-way](https://github.com/alphagov/gds-way)|
@@ -27,6 +29,8 @@ The repos are:
 |GOV.UK Registers|[https://registers-docs.cloudapps.digital](https://registers-docs.cloudapps.digital)|[https://github.com/alphagov/registers-tech-docs](https://github.com/alphagov/registers-tech-docs)|
 |GOV.UK Notify|[https://www.notifications.service.gov.uk/documentation](https://www.notifications.service.gov.uk/documentation)|[Python](https://github.com/alphagov/notifications-python-client)<br>[Java](https://github.com/alphagov/notifications-java-client)<br>[Ruby](https://github.com/alphagov/notifications-ruby-client)<br>[Node.js](https://github.com/alphagov/notifications-node-client)<br>[PHP](https://github.com/alphagov/notifications-php-client)<br>[NET](https://github.com/alphagov/notifications-net-client)|
 |Reliability Engineering|[https://reliability-engineering.cloudapps.digital](https://reliability-engineering.cloudapps.digital)|[https://github.com/alphagov/reliability-engineering](https://github.com/alphagov/reliability-engineering)|
+
+<div style="height:1px;font-size:1px;">&nbsp;</div>
 
 In development:
 
