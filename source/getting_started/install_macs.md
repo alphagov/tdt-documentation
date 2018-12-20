@@ -45,7 +45,7 @@ You can install Ruby in multiple ways, for example using [Ruby Version Manager](
 1. Run the following in the command line interface to install the ruby version manager:
 
     ```
-    `\curl -sSL https://get.rvm.io | bash -s stable --ruby` 
+    `\curl -sSL https://get.rvm.io | bash -s stable --ruby`
     ```
 
 1. Run `rvm install ruby-x.x.x` to install the latest version of [Ruby](https://www.ruby-lang.org/en/). The current x.x.x is `2.5.1`.
@@ -70,10 +70,16 @@ Run the following in the command line interface to install Middleman:
 gem install middleman
 ```
 
+## Download the `govuk_tech_docs ` Gem
 
+The tool is [hosted on
+Rubygems](https://rubygems.org/gems/govuk_tech_docs/versions/1.5.0) [external
+link].
 
+You should include the following in your project Gemfile to use the tool:
 
+`gem 'govuk_tech_docs'`
 
+Then install [using Bundler](#install-bundler). Run the following in your project directory:
 
-
-
+`bundle install`
