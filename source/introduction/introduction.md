@@ -1,6 +1,6 @@
 # Introduction
 
-## What is the technical documentation tool?
+## What is the GDS technical documentation tool?
 
 This tool is a template for technical and developer documentation.
 
@@ -15,3 +15,11 @@ It promotes consistency on technical documentation which should reassure end use
 It helps technical writers manage their technical content using the [‘docs as code’](https://gdstechnology.blog.gov.uk/2017/08/25/why-we-use-a-docs-as-code-approach-for-technical-documentation/) approach.
 
 This documentation is currently under construction.
+
+## Who should use the tool?
+
+The GDS technical documentation tool is intended for internal use by the GDS and government community.
+
+## Who is this documentation website for?
+
+The content in this documentation website is intended for internal use by the GDS and government community.
