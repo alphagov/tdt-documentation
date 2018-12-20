@@ -17,7 +17,7 @@ To push your documentation changes to GitHub for the first time, you must:
 
 1. [Create a new local documentation repo](/create_new_project.html#create-a-new-project) if required.
 
-### Commit all changes in the local repo 
+### Commit all changes in the local repo
 
 1. Go to the local repo directory in the command line.
 
@@ -38,7 +38,7 @@ To push your documentation changes to GitHub for the first time, you must:
     ```
     git commit -m "COMMIT-MESSAGE"`
     ```
-    
+
     where `COMMIT-MESSAGE` is the message describing the commit.
 
 ### Link the local repo to the remote repo
@@ -47,11 +47,11 @@ To push your documentation changes to GitHub for the first time, you must:
 
 1. Select the __Clone or download__ button.
 
-1. Select either __Use HTTPS__ or __Use SSH__. 
+1. Select either __Use HTTPS__ or __Use SSH__.
 
 1. Select the copy button.
 
-1. In the command line, link the local repo to the remote repo: 
+1. In the command line, link the local repo to the remote repo:
 
     ```
     git remote add origin REMOTE-REPO-URL
@@ -65,7 +65,7 @@ To push your documentation changes to GitHub for the first time, you must:
 
 ### Push the staged commit to the remote repo
 
-Push the changes in your local repo to the remote repo: 
+Push the changes in your local repo to the remote repo:
 
 ```
 git push -u origin master
@@ -75,8 +75,32 @@ You have now created a remote documentation repo on GitHub.
 
 For more information, refer to [Adding an existing project to GitHub](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/) [external link].
 
+## Deploy your site
+
+The GDS technical documentation tool is built on Middleman, which is a static
+site generator. You can therefore deploy your site anywhere that supports
+static sites.
+
+### Use the GOV.UK PaaS
+
+We recommend that government services use the [GOV.UK
+PaaS](https://www.cloud.service.gov.uk/) to deploy documentation sites built
+with the GDS technical documentation tool. This is also free of charge for
+government services.
+
+### GitHub Pages
+
+With some modification, you can also deploy your site with [GitHub
+Pages](https://pages.github.com/), but we do not support this. To do this, you
+could for example use the [`middleman-gh-pages`]
+tool](https://github.com/edgecase/middleman-gh-pages), which we do not
+support. We also cannot guarantee that all features of the tool will work if
+you deploy your site with GitHub Pages.
+
 ## Continuous integration
 
-Travis CI - link to docs - https://docs.cloud.service.gov.uk/using_ci.html#using-the-travis-ci-tool
-
-Instructions on how to do continuous integration for a docs repo
+The GOV.UK PaaS documentation explains how to set up continuous
+integration (CI) with [Travis and
+Jenkins](https://docs.cloud.service.gov.uk/using_ci.html#using-the-travis-ci-tool).
+We recommend this method for documentation sites built using the GDS technical
+documentation tool.
