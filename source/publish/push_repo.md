@@ -1,5 +1,10 @@
 # Publish your documentation
 
+To publish your documentation, you must:
+
+- push your documentation to the remote GitHub repo
+- deploy your site
+
 ## Push documentation to GitHub
 
 These instructions assume that you have documentation changes ready to push to GitHub.
@@ -30,7 +35,7 @@ To push your documentation changes to GitHub for the first time, you must:
 1. If applicable, add all files in the local repo and stage them for commit:
 
     ```
-    git add
+    git add .
     ```
 
 1. Commit the staged files:
@@ -99,8 +104,4 @@ you deploy your site with GitHub Pages.
 
 ## Continuous integration
 
-The GOV.UK PaaS documentation explains how to set up continuous
-integration (CI) with [Travis and
-Jenkins](https://docs.cloud.service.gov.uk/using_ci.html#using-the-travis-ci-tool).
-We recommend this method for documentation sites built using the GDS technical
-documentation tool.
+The GOV.UK PaaS documentation explains how to set up continuous integration (CI) with [Travis and Jenkins](https://docs.cloud.service.gov.uk/using_ci.html#using-the-travis-ci-tool). We recommend this method for documentation sites built using the GDS technical documentation tool.
