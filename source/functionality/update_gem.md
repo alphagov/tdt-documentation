@@ -16,38 +16,15 @@
     git clone [repo address]
     ```
 
-## Create a new branch
-
-1. Go into the cloned local repo folder using the command line.
-
-1. Check that you are on the master branch:
-
-    ```
-    git status
-    ```
-
-    You should get the message:
-
-    ```
-    On branch master
-    Your branch is up to date with 'origin/master'.
-    nothing to commit, working tree clean
-    ```
-1. Create a new branch and switch to that branch:
-
-    ```
-    git checkout -b [BRANCH_NAME]
-    ```
-
 ## Update the ruby gems in the documentation repo
 
-1. Update all ruby gems:
+1. Update all ruby gems in the cloned local documentation repo:
 
     ```
     bundle update
     ```
 
-    This updates all the ruby gems that your documentation repo uses, including the `tech-docs-gem`.
+    This updates all the ruby gems that your repo uses, including the `tech-docs-gem`.
 
     You should get the message `Bundle updated!` once the update is finished.
 
