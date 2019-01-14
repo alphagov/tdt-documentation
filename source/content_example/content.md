@@ -76,6 +76,7 @@ You should create tables using HTML when there are specific formatting requireme
 The following code is an example of a 2 column 2 row table with no text wrapping.
 
 ```bash
+<div style = "overflow-x:auto;"> 
 <table style="width:100%">
 <tr>
 <th nowrap>Header 1</th>
@@ -86,6 +87,7 @@ The following code is an example of a 2 column 2 row table with no text wrapping
 <td nowrap>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et enim quis arcu pharetra aliquet. Maecenas posuere tellus arcu, a suscipit dui posuere eu. Nunc vestibulum ligula sit amet eros euismod accumsan. </td>
 </tr>
 </table>
+</div>
 ```
 
 ## Links
