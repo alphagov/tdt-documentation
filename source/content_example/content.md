@@ -102,6 +102,12 @@ For example:
 [The Google home page](http://www.google.co.uk)
 ```
 
+You can write the link in HTML with a `target="blank"` element to make the link open in a new internet browser tab by default:
+
+```bash
+<a href="LINK ADDRESS" target="blank">LINK TEXT</a>
+```
+
 ## Images
 
 `!``[]``(LOCATION_OF_IMAGE)`
