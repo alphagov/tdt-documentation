@@ -96,11 +96,93 @@ government services.
 ### GitHub Pages
 
 With some modification, you can also deploy your site with [GitHub
-Pages](https://pages.github.com/), but we do not support this. To do this, you
+Pages](https://pages.github.com/) [external link], but we do not support this. To do this, you
 could for example use the [`middleman-gh-pages`]
-tool](https://github.com/edgecase/middleman-gh-pages), which we do not
+tool](https://github.com/edgecase/middleman-gh-pages) [external link], which we do not
 support. We also cannot guarantee that all features of the tool will work if
 you deploy your site with GitHub Pages.
+
+### Example: Deploy your documentation to a temporary site on the GOV.UK PaaS
+
+You can deploy your documentation on a temporary site on the GOV.UK PaaS.
+
+This is useful for review of content by non-technical people, for example delivery managers or product owners.
+
+#### Before you start
+
+You must have a GOV.UK PaaS account. This account is called an organisation, or org. Sign up for an org account at [https://www.cloud.service.gov.uk/signup](https://www.cloud.service.gov.uk/signup).
+
+Once you have an org account, you will need a personal account with access to the `gds-tech-writers` org. Ask one of the other tech writers to authorise the creation of your personal account with access to this org.
+
+For more information, refer to the [GOV.UK PaaS documentation on accounts](https://docs.cloud.service.gov.uk/get_started.html#get-an-account).
+
+#### Install the Autopilot plugin
+
+You only need to install the Autopilot plugin once.
+
+1. Go to [https://github.com/contraband/autopilot/releases] [external link] and download the latest `autopilot-darwin` file.
+
+1. Open the command line and navigate to the folder containing the downloaded autopilot file.
+
+1. Run the following in the command line to make the downloaded file executable:
+
+    ```
+    chmod +x autopilot-darwin
+    ```
+
+1. Run the following to install the plugin:
+
+    ```
+    cf install-plugin autopilot-darwin
+    ```
+
+#### Deploy the temporary site
+
+1. Run the following to sign in to the GOV.UK PaaS
+
+    ```
+    cf login -a api.london.cloud.service.gov.uk -u <YOUR-USERNAME>@digital.cabinet-office.gov.uk
+    ```
+
+1. Run the following to target the `gds-tech-writers` org and `sandbox` space:
+
+    ```
+    cf target -o gds -tech-writers -s sandbox
+    ```
+
+1. Run `cf apps` to check what apps are running in the targeted space.
+
+1. Navigate to your tech doc repo and, if necessary, create a `manifest.yml` in the root directory containing the following code:
+
+    ```
+    applications:
+    - name: NAME
+      memory: 64M
+      path: ./build
+      buildpack: staticfile_buildpack
+      instances: 2
+    ```
+    where `NAME` is the name of your content.
+
+1. Run `bundle exec middleman build` in the command line.
+
+1. Run the following to push the app:
+
+    ```
+    cf zero-downtime-push NEW-APP-NAME-TO-BE-DEPLOYED -f MANIFEST_PATH_AND_NAME -p YOUR_FILE_PATH
+    ```
+
+    If you're already in the directory with the manifest, you don't need the `-p` flag or the `YOUR_FILE_PATH` information.
+
+    You can use `cf push` if you're not using the autopilot plugin.
+
+1. Run `cf apps` to check your new app appears. You can check your deployment at:
+
+    ```
+    NEW-APP-NAME-TO-BE-DEPLOYED.cloudapps.digital
+    ```
+
+For more information on deploying apps, refer to the [GOV.UK PaaS documentation on deploying apps](https://docs.cloud.service.gov.uk/deploying_apps.html#deploying-apps).
 
 ## Continuous integration
 
