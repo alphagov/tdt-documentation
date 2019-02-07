@@ -11,7 +11,7 @@
     ```
     where `PROJECT_NAME` is the name of your project.
 
-1. Answer __Yes__ or __No__ to the installation questions.
+1. Answer the installation questions.
 
 1. Project creation is complete when you see `Bundle complete!`.
 
