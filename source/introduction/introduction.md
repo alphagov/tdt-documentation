@@ -1,4 +1,4 @@
-# The GDS technical documentation tool
+# Tech Docs Template
 
 ## What you can use this tool for
 
@@ -18,4 +18,4 @@ This documentation is currently under construction.
 
 ## Who should use this tool
 
-The GDS technical documentation tool is intended for internal use by the GDS and government community.
+The Tech Docs Template is intended for internal use by the GDS and government community.

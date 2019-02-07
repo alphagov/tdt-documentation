@@ -3,7 +3,7 @@ host: https://tdt-documentation.london.cloudapps.digital/
 
 # Header-related options
 show_govuk_logo: true
-service_name: GDS documentation tool
+service_name: Tech docs template
 service_link:
 phase: Beta
 

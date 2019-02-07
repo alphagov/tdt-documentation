@@ -1,4 +1,4 @@
-# Documentation for the GDS technical documentation tool (GDS TDT)
+# Tech Docs Template Documentation
 
 [![Build Status](https://travis-ci.org/alphagov/tdt-documentation.svg?branch=master)](https://travis-ci.org/alphagov/tdt-documentation)
 

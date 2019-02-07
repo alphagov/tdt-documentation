@@ -82,7 +82,7 @@ For more information, refer to [Adding an existing project to GitHub](https://he
 
 ## Deploy your site
 
-The GDS technical documentation tool is built on Middleman, which is a static
+The Tech Docs Template is built on Middleman, which is a static
 site generator. You can therefore deploy your site anywhere that supports
 static sites.
 
@@ -90,7 +90,7 @@ static sites.
 
 We recommend that government services use the [GOV.UK
 PaaS](https://www.cloud.service.gov.uk/) to deploy documentation sites built
-with the GDS technical documentation tool. This is also free of charge for
+with the Tech Docs Template. This is also free of charge for
 government services.
 
 ### GitHub Pages
@@ -104,4 +104,4 @@ you deploy your site with GitHub Pages.
 
 ## Continuous integration
 
-The GOV.UK PaaS documentation explains how to set up continuous integration (CI) with [Travis and Jenkins](https://docs.cloud.service.gov.uk/using_ci.html#using-the-travis-ci-tool). We recommend this method for documentation sites built using the GDS technical documentation tool.
+The GOV.UK PaaS documentation explains how to set up continuous integration (CI) with [Travis and Jenkins](https://docs.cloud.service.gov.uk/using_ci.html#using-the-travis-ci-tool). We recommend this method for documentation sites built using the Tech Docs Template.
