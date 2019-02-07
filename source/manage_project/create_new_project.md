@@ -31,4 +31,4 @@
 
 Navigate to the created documentation repo folder.
 
-The folder will have multiple pre-populated files. You will only need to amend the content folder and the `config/tech-docs.yml` file. By default, the content folder is `source/documentation`.
+The folder will have multiple pre-populated files. You will only need to amend the `/source` folder and the `config/tech-docs.yml` file.
