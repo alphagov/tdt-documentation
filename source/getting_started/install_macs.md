@@ -6,7 +6,6 @@ You must have the following set up on your mac laptop:
 - text editor
 - [Xcode](https://developer.apple.com/xcode/) command line interface tools [external link]
 - [Ruby](https://www.ruby-lang.org/en/) [external link]
-- [Bundler](https://bundler.io/) [external link]
 - [Middleman](https://middlemanapp.com/) static site generator [external link]
 
 You must also have a [GitHub account](https://github.com/) [external link] with access to alphagov at `https://github.com/alphagov/paas-tech-docs`.
