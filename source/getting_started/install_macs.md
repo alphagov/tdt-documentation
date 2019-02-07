@@ -48,17 +48,7 @@ You can install Ruby in multiple ways, for example using [Ruby Version Manager](
     `\curl -sSL https://get.rvm.io | bash -s stable --ruby`
     ```
 
-1. Run `rvm install ruby-x.x.x` to install the latest version of [Ruby](https://www.ruby-lang.org/en/). The current x.x.x is `2.5.1`.
-
-## Install Bundler
-
-[Bundler](https://bundler.io/) [external link] is installed globally. This means that you can run the install command from any location on your local machine rather than from within a specific folder.
-
-Run the following in the command line interface to install Bundler:
-
-```
-gem install bundler
-```
+1. Run `rvm install ruby-x.x.x` to install the latest version of [Ruby](https://www.ruby-lang.org/en/). The current x.x.x is `2.6.1`.
 
 ## Install Middleman
 
