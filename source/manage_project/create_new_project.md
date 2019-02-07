@@ -7,14 +7,14 @@
 1. Run the following in the command line:
 
     ```
-    Middleman init PROJECT_NAME -T alphagov/tech-docs-template
+    middleman init PROJECT_NAME -T alphagov/tech-docs-template
     ```
     where `PROJECT_NAME` is the name of your project.
-    
+
 1. Answer __Yes__ or __No__ to the installation questions.
 
 1. Project creation is complete when you see `Bundle complete!`.
-    
+
 ## Update your version of the tech doc template
 
 1. Open the command line interface.
@@ -32,4 +32,3 @@
 Navigate to the created documentation repo folder.
 
 The folder will have multiple pre-populated files. You will only need to amend the content folder and the `config.yml` file. By default, the content folder is `source/documentation`.
-
