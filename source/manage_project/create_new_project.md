@@ -15,18 +15,6 @@
 
 1. Project creation is complete when you see `Bundle complete!`.
 
-## Update your version of the tech doc template
-
-1. Open the command line interface.
-
-1. Navigate to the new project folder.
-
-1. Run the following in the command line to update all the gems inside the repo:
-
-    ```
-    bundle install
-    ```
-
 ## View your new project
 
 Navigate to the created documentation repo folder.
