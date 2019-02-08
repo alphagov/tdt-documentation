@@ -6,7 +6,6 @@ You must have the following set up on your mac laptop:
 - text editor
 - [Xcode](https://developer.apple.com/xcode/) command line interface tools [external link]
 - [Ruby](https://www.ruby-lang.org/en/) [external link]
-- [Bundler](https://bundler.io/) [external link]
 - [Middleman](https://middlemanapp.com/) static site generator [external link]
 
 You must also have a [GitHub account](https://github.com/) [external link] with access to alphagov at `https://github.com/alphagov/paas-tech-docs`.
@@ -14,6 +13,8 @@ You must also have a [GitHub account](https://github.com/) [external link] with 
 ## Administrator rights on your laptop
 
 Email [sd-community@digital.cabinet-office.gov.uk](mailto:sd-community@digital.cabinet-office.gov.uk) to request administrator rights on your laptop.
+
+You must be a Government Digital Service employee to do this.
 
 ## Install text editor
 
@@ -48,17 +49,7 @@ You can install Ruby in multiple ways, for example using [Ruby Version Manager](
     `\curl -sSL https://get.rvm.io | bash -s stable --ruby`
     ```
 
-1. Run `rvm install ruby-x.x.x` to install the latest version of [Ruby](https://www.ruby-lang.org/en/). The current x.x.x is `2.5.1`.
-
-## Install Bundler
-
-[Bundler](https://bundler.io/) [external link] is installed globally. This means that you can run the install command from any location on your local machine rather than from within a specific folder.
-
-Run the following in the command line interface to install Bundler:
-
-```
-gem install bundler
-```
+1. Run `rvm install ruby-x.x.x` to install the latest version of [Ruby](https://www.ruby-lang.org/en/). The current x.x.x is `2.6.1`.
 
 ## Install Middleman
 
@@ -69,17 +60,3 @@ Run the following in the command line interface to install Middleman:
 ```
 gem install middleman
 ```
-
-## Download the `govuk_tech_docs ` Gem
-
-The tool is [hosted on
-Rubygems](https://rubygems.org/gems/govuk_tech_docs/versions/1.5.0) [external
-link].
-
-You should include the following in your project Gemfile to use the tool:
-
-`gem 'govuk_tech_docs'`
-
-Then install [using Bundler](#install-bundler). Run the following in your project directory:
-
-`bundle install`
