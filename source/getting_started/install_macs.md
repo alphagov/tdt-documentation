@@ -12,7 +12,9 @@ You must also have a [GitHub account](https://github.com/) [external link] with 
 
 ## Administrator rights on your laptop
 
-If your in GDS, [sd-community@digital.cabinet-office.gov.uk](mailto:sd-community@digital.cabinet-office.gov.uk) to request administrator rights on your laptop.
+Email [sd-community@digital.cabinet-office.gov.uk](mailto:sd-community@digital.cabinet-office.gov.uk) to request administrator rights on your laptop.
+
+You must be a Government Digital Service employee to do this.
 
 ## Install text editor
 
