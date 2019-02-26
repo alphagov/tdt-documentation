@@ -123,6 +123,8 @@ The following instructions apply if you:
 
 1. Copy the generated username and password hash into the `Staticfile.auth` file and save.
 
+1. Deploy your documentation site in line with your normal process.
+
 ## Continuous integration
 
 The GOV.UK PaaS documentation explains how to set up continuous integration (CI) with [Travis and Jenkins](https://docs.cloud.service.gov.uk/using_ci.html#using-the-travis-ci-tool). We recommend this method for documentation sites built using the Tech Docs Template.
