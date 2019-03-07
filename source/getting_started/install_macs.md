@@ -3,7 +3,6 @@
 You must have the following set up on your mac laptop:
 
 - administrator rights on your laptop
-- text editor
 - [Xcode](https://developer.apple.com/xcode/) command line interface tools [external link]
 - [Ruby](https://www.ruby-lang.org/en/) [external link]
 - [Middleman](https://middlemanapp.com/) static site generator [external link]
@@ -13,10 +12,6 @@ You must have the following set up on your mac laptop:
 Email [sd-community@digital.cabinet-office.gov.uk](mailto:sd-community@digital.cabinet-office.gov.uk) to request administrator rights on your laptop.
 
 You must be a Government Digital Service employee to do this.
-
-## Install text editor
-
-You should install a text editor to edit your content.
 
 ## Install Xcode command line interface tools
 
