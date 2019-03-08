@@ -18,7 +18,7 @@ To push your documentation changes to GitHub for the first time, you must:
 
 ### Create local and remote GitHub repos
 
-1. [Create a remote empty repo](https://help.github.com/articles/create-a-repo/) [external link] in your organisation on GitHub.
+1. [Create a remote empty repo](https://help.github.com/articles/create-a-repo/) in your organisation on GitHub.
 
 1. [Create a new local documentation repo](/create_new_project.html#create-a-new-project) if required.
 
@@ -78,7 +78,7 @@ git push -u origin master
 
 You have now created a remote documentation repo on GitHub.
 
-For more information, refer to [Adding an existing project to GitHub](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/) [external link].
+For more information, refer to [Adding an existing project to GitHub](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/).
 
 ## Deploy your site
 
