@@ -102,6 +102,28 @@ tool](https://github.com/edgecase/middleman-gh-pages), which we do not
 support. We also cannot guarantee that all features of the tool will work if
 you deploy your site with GitHub Pages.
 
+### Add basic authentication
+
+There are many ways to add basic authentication to your documentation site.
+
+The following instructions apply if you want to deploy your documentation site on the GOV.UK PaaS or another platform using the [Cloud Foundry open source cloud application platform](https://www.cloudfoundry.org/).
+
+This method relies on adding a `Staticfile.auth` file to the `build` folder because building the documentation doesn't automatically add the `Staticfile.auth` file. If you added `Staticfile.auth` once and run the build command again, the file will disappear. You need to add `Staticfile.auth` again to enable basic authentication for the new build.
+
+1. In the command line, navigate to your local documentation repo.
+
+1. If required, run `bundle exec middleman build` to create a `build` folder.
+
+1. Create a new `Staticfile.auth` file in the `build` folder.
+
+1. Go to the [Htpasswd Generator](http://www.htaccesstools.com/htpasswd-generator).
+
+1. Complete the __Username__ and __Password__ fields, and select __Create .htpasswd file__.
+
+1. Copy the generated username and password hash into the `Staticfile.auth` file and save.
+
+1. Deploy your documentation site in line with your normal process.
+
 ## Continuous integration
 
 The GOV.UK PaaS documentation explains how to set up continuous integration (CI) with [Travis and Jenkins](https://docs.cloud.service.gov.uk/using_ci.html#using-the-travis-ci-tool). We recommend this method for documentation sites built using the Tech Docs Template.
