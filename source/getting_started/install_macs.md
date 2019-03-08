@@ -3,9 +3,9 @@
 You must have the following set up on your mac laptop:
 
 - administrator rights on your laptop
-- [Xcode](https://developer.apple.com/xcode/) command line interface tools [external link]
-- [Ruby](https://www.ruby-lang.org/en/) [external link]
-- [Middleman](https://middlemanapp.com/) static site generator [external link]
+- [Xcode](https://developer.apple.com/xcode/) command line interface tools
+- [Ruby](https://www.ruby-lang.org/en/)
+- [Middleman](https://middlemanapp.com/) static site generator
 
 ## Administrator rights on your laptop
 
@@ -25,16 +25,16 @@ These instructions assume that you are the Managed Software Centre on your Mac.
 
 OR
 
-1. Go to [Apple Developer Downloads](https://developer.apple.com/download/more) [external link].
+1. Go to [Apple Developer Downloads](https://developer.apple.com/download/more).
 1. Search for "xcode".
 1. Select the appropriate __Command Line Tools (macOS x.x) for Xcode x.x__ and download the file.
 1. Install the file.
 
 ## Install Ruby
 
-[Ruby](https://www.ruby-lang.org/en/) [external link] is installed globally. This means that you can run the install command from any location on your local machine rather than from within a specific folder.
+[Ruby](https://www.ruby-lang.org/en/) is installed globally. This means that you can run the install command from any location on your local machine rather than from within a specific folder.
 
-You can install Ruby in multiple ways, for example using [Ruby Version Manager](https://rvm.io/) (RVM) or [rbenv](https://github.com/rbenv/rbenv) [external links]. These instructions assume you are using RVM.
+You can install Ruby in multiple ways, for example using [Ruby Version Manager](https://rvm.io/) (RVM) or [rbenv](https://github.com/rbenv/rbenv). These instructions assume you are using RVM.
 
 1. Run the following in the command line interface to install the ruby version manager:
 
@@ -46,7 +46,7 @@ You can install Ruby in multiple ways, for example using [Ruby Version Manager](
 
 ## Install Middleman
 
-[Middleman](https://middlemanapp.com/) [external link] is installed globally. This means that you can run the install command from any location on your local machine rather than from within a specific folder.
+[Middleman](https://middlemanapp.com/) is installed globally. This means that you can run the install command from any location on your local machine rather than from within a specific folder.
 
 Run the following in the command line interface to install Middleman:
 
