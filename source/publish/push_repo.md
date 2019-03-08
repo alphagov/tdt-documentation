@@ -104,12 +104,11 @@ you deploy your site with GitHub Pages.
 
 ### Add basic authentication
 
-There are many ways to add basic authentication to your documentation site. 
+There are many ways to add basic authentication to your documentation site.
 
-The following instructions apply if you:
+The following instructions apply if you want to deploy your documentation site on the GOV.UK PaaS or another platform using the [Cloud Foundry open source cloud application platform](https://www.cloudfoundry.org/).
 
-- want to deploy your documentation site on the GOV.UK PaaS
-- only have to push your documentation site to the GOV.UK PaaS once, for example if it is a temporary site to review a content change
+This method relies on adding a `Staticfile.auth` file to the `build` folder because building the documentation doesn't automatically add the `Staticfile.auth` file. If you added `Staticfile.auth` once and run the build command again, the file will disappear. You need to add `Staticfile.auth` again to enable basic authentication for the new build.
 
 1. In the command line, navigate to your local documentation repo.
 
@@ -117,9 +116,9 @@ The following instructions apply if you:
 
 1. Create a new `Staticfile.auth` file in the `build` folder.
 
-1. Go to the [Htpasswd Generator](http://www.htaccesstools.com/htpasswd-generator). 
+1. Go to the [Htpasswd Generator](http://www.htaccesstools.com/htpasswd-generator).
 
-1. Complete the __Username__ and __Password__ fields, and select __Create .htpasswd file__. 
+1. Complete the __Username__ and __Password__ fields, and select __Create .htpasswd file__.
 
 1. Copy the generated username and password hash into the `Staticfile.auth` file and save.
 
