@@ -2,8 +2,6 @@
 
 [![Build Status](https://travis-ci.org/alphagov/tdt-documentation.svg?branch=master)](https://travis-ci.org/alphagov/tdt-documentation)
 
-<<<<<<< Updated upstream
-=======
 This repository is used to generate the [documentation website for the Tech Docs Template][tdt-docs] and uses the template itself.
 
 The Tech Docs Template is a [middleman template][mmt] that
@@ -52,7 +50,6 @@ Travis CI automatically publishes changes merged into the master branch of this 
 
 Run `bundle exec middleman build --verbose` to get detailed error messages to help with finding the problem.
 
->>>>>>> Stashed changes
 ## Code of conduct
 
 Please refer to the `alphagov` [code of conduct](https://github.com/alphagov/code-of-conduct).
