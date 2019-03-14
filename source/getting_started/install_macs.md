@@ -9,7 +9,7 @@ You must have the following set up on your mac laptop:
 
 ## Administrator rights on your laptop
 
-Email [sd-community@digital.cabinet-office.gov.uk](mailto:sd-community@digital.cabinet-office.gov.uk) to request administrator rights on your laptop.
+Raise a ticket on the [GDS Web Help Desk](https://gdshelpdesk.digital.cabinet-office.gov.uk/helpdesk/WebObjects/Helpdesk.woa) to request administrator rights on your laptop.
 
 You must be a Government Digital Service employee to do this.
 
