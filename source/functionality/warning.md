@@ -8,4 +8,3 @@ Insert the following Ruby code into your content file:
 
 ```ruby
 <%= warning_text('INSERT WARNING TEXT HERE') %>
-```
