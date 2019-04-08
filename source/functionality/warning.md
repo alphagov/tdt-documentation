@@ -6,6 +6,6 @@ This warning text format is consistent with the [GOV.UK Design System warning te
 
 Insert the following HTML code into your content file:
 
-```bash
+```ruby
 <%= warning_text('INSERT WARNING TEXT HERE') %>
 ```
