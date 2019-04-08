@@ -33,6 +33,17 @@ This page provides examples of different content types.
 - list item N
 ```
 
+## Nested unordered list within an ordered list
+
+```bash
+1. Lorem ipsum.
+
+    Lorem ipsum:
+      - nested bullet 1
+      - nested bullet 2
+      - nested bullet 3
+```      
+
 ## Tables
 
 You can create tables using either markdown or HTML.
