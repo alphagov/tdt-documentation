@@ -8,7 +8,7 @@ This is suitable for documentation sites that have do not have a lot of content,
 
 1. [Create the content files](create_new_project.html#create-a-new-project) for your documentation site.
 
-1. [Amend](content.html#content-examples) your content files to ready them for your documentation site.
+1. [Amend](content.html#content-examples) your content files](content.html#content-examples) to ready them for your documentation site.
 
 1. Save your content files inside your documentation repo in your desired hierarchy.
 
