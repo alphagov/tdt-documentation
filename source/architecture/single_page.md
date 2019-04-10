@@ -6,7 +6,7 @@ This is suitable for documentation sites that have do not have a lot of content,
 
 ## Organise content files
 
-1. [Create](create_new_project.html#create-a-new-project) the content files for your documentation site.
+1. [Create the content files](create_new_project.html#create-a-new-project) for your documentation site.
 
 1. [Amend](content.html#content-examples) your content files to ready them for your documentation site.
 
