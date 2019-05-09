@@ -20,9 +20,18 @@ To push your documentation changes to GitHub for the first time, you must:
 
 1. [Create a remote empty repo](https://help.github.com/articles/create-a-repo/) in your organisation on GitHub.
 
+    We recommend the following settings:
+    
+    - no readme file
+    - no `.gitignore`
+    - MIT license
+    - yes to dependabot
+
 1. [Create a new local documentation repo](/create_new_project.html#create-a-new-project) if required.
 
 ### Commit all changes in the local repo
+
+This initial commit happens on the master branch. You should use non-master branches for subsequent changes.
 
 1. Go to the local repo directory in the command line.
 
@@ -68,12 +77,32 @@ To push your documentation changes to GitHub for the first time, you must:
     git remote -v
     ```
 
+### Link the local master branch to the remote master branch
+
+1. In the command line, [rebase](https://git-scm.com/docs/git-rebase) the local master branch on to the remote master branch:
+
+    ```
+    git pull --rebase
+    ```
+
+1. Tell your local repo which master branch to refer to:
+
+    ```
+    git branch --set-upstream-to=origin/master
+    ```
+
+1. Rebase again:
+
+    ```
+    git pull --rebase
+    ```
+
 ### Push the staged commit to the remote repo
 
 Push the changes in your local repo to the remote repo:
 
 ```
-git push -u origin master
+git push
 ```
 
 You have now created a remote documentation repo on GitHub.
