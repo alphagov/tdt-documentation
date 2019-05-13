@@ -124,6 +124,25 @@ This method relies on adding a `Staticfile.auth` file to the `build` folder beca
 
 1. Deploy your documentation site in line with your normal process.
 
+## Current published technical documentation
+
+<div style="height:1px;font-size:1px;">&nbsp;</div>
+
+| Organisation        | TItle                                    | Owner / Author / Contact              | Location                                                                               | GitHub repo                                                      |
+|---------------------|------------------------------------------|---------------------------------------|----------------------------------------------------------------------------------------|------------------------------------------------------------------|
+| Ministry of Justice | Cloud platform user guide                | David Salgado, Tech Arch, MoJ         | https://user-guide.cloud-platform.service.justice.gov.uk/                              | https://github.com/ministryofjustice/cloud-platform-user-guide   |
+| HMRC                | VAT (MTD) end-to-end service guide       | Mick Schonhut, Technical Writer, HMRC | https://developer.service.hmrc.gov.uk/guides/vat-mtd-end-to-end-service-guide/         | https://github.com/hmrc/vat-service-guide                        |
+| HMRC                | Self Assessment end-to-end service guide | Mick Schonhut, Technical Writer, HMRC | https://developer.service.hmrc.gov.uk/guides/self-assessment-end-to-end-service-guide/ | https://github.com/hmrc/self-assessment-end-to-end-service-guide |
+| GDS                 | GOV.UK Platform as a Service             | Jon Glassman, Tech Writer, GDS        | https://docs.cloud.service.gov.uk/#gov-uk-platform-as-a-service                        | https://github.com/alphagov/paas-tech-docs                       |
+| GDS                 | GOV.UK Pay                               | Mark Green, Tech Writer, GDS          | https://docs.payments.service.gov.uk/#gov-uk-pay-documentation                         | https://github.com/alphagov/pay-tech-docs                        |
+| GDS                 | GOV.UK Notify                            | Jon Glassman, Tech Writer, GDS        | https://www.notifications.service.gov.uk/documentation                                 | https://github.com/alphagov/notifications-python-client          |
+| GDS                 | GOV.UK Verify                            | Andrea Szollossi, Tech Writer, GDS    | https://www.docs.verify.service.gov.uk/#gov-uk-verify-technical-documentation          | https://github.com/alphagov/verify-tech-docs                     |
+| GDS                 | GDS Way                                  | Steve Evans, Tech Writer, GDS         | https://gds-way.cloudapps.digital/                                                     | https://github.com/alphagov/gds-way                              |
+| GDS                 | GDS Reliability Engineering              | Jon Glassman, Tech Writer, GDS        | https://reliability-engineering.cloudapps.digital/                                     | https://github.com/alphagov/reliability-engineering              |
+| GDS                 | GOV.UK Registers                         | Technical Writers, GDS                | https://docs.registers.service.gov.uk/#gov-uk-registers-technical-documentation        | https://github.com/alphagov/registers-tech-docs                  |
+
+<div style="height:1px;font-size:1px;">&nbsp;</div>
+
 ## Continuous integration
 
 The GOV.UK PaaS documentation explains how to set up continuous integration (CI) with [Travis and Jenkins](https://docs.cloud.service.gov.uk/using_ci.html#using-the-travis-ci-tool). We recommend this method for documentation sites built using the Tech Docs Template.
