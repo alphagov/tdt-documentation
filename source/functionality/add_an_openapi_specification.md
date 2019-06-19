@@ -1,6 +1,6 @@
-# Enable API reference 
+# Add an OpenAPI specification to your documentation
 
-This feature extracts endpoint information from an Open API v3 yaml file that describes an API.
+This tool can extract endpoint information from an [Open API v3 specification](https://swagger.io/docs/specification/about/) in a YAML file.
 
 ## Amend the tech-docs.yml file
 
