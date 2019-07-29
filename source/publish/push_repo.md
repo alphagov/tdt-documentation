@@ -2,7 +2,7 @@
 
 To publish your documentation, you must:
 
-- push your documentation to the remote GitHub repo
+- build your site
 - deploy your site
 
 ## Push documentation to GitHub
