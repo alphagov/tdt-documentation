@@ -23,6 +23,8 @@ This page provides examples of different content types.
 1. list item N
 ```
 
+hello
+
 ## Unordered list
 
 ```bash
@@ -87,7 +89,7 @@ You should create tables using HTML when there are specific formatting requireme
 The following code is an example of a 2 column 2 row table with no text wrapping.
 
 ```bash
-<div style = "overflow-x:auto;"> 
+<div style = "overflow-x:auto;">
 <table style="width:100%">
 <tr>
 <th nowrap>Header 1</th>

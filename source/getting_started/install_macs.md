@@ -22,6 +22,7 @@ These instructions assume that you are the Managed Software Centre on your Mac.
 1. Install all required updates.
 1. Search for xcode in the search field in Updates.
 1. Install Xcode x.x.x or update if necessary.
+1. Make a cup of coffee.
 
 OR
 
