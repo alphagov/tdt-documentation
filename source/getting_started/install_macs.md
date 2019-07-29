@@ -1,4 +1,4 @@
-# Prerequisites for Macs
+# Monday vibes
 
 You must have the following set up on your mac laptop:
 
