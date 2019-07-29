@@ -18,4 +18,4 @@ This documentation is currently under construction.
 
 ## Who should use this tool
 
-The Tech Docs Template is intended for internal use by the GDS and government community.
+The Tech Docs Template is intended for use by the GDS and government community.
