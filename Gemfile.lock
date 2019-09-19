@@ -44,7 +44,7 @@ GEM
     fast_blank (1.0.0)
     fastimage (2.1.7)
     ffi (1.11.1)
-    govuk_tech_docs (2.0.3)
+    govuk_tech_docs (2.0.4)
       activesupport
       chronic (~> 0.10.2)
       middleman (~> 4.0)
@@ -189,4 +189,4 @@ DEPENDENCIES
   wdm (~> 0.1.0)
 
 BUNDLED WITH
-   1.16.6
+   1.17.2
