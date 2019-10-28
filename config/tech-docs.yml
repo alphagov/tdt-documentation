@@ -10,7 +10,6 @@ phase: Beta
 # Links to show on right-hand-side of header
 header_links:
   About: https://sites.google.com/a/digital.cabinet-office.gov.uk/gds/communities-of-practice/content/technical-writing
-  Documentation: /
   Support: /support
 
 # Table of contents depth – how many levels to include in the table of contents.
