@@ -9,6 +9,8 @@ phase: Beta
 
 # Links to show on right-hand-side of header
 header_links:
+  Template: https://github.com/alphagov/tech-docs-template
+  Ruby gem: https://github.com/alphagov/tech-docs-gem
   Support: /support
 
 # Table of contents depth – how many levels to include in the table of contents.
