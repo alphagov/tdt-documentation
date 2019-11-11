@@ -21,7 +21,7 @@ ga_tracking_id: UA-XXXX-Y
 
 ## `github_repo`
 
-Your repository. Required if [show_contribution_banner](#show-contribution-banner) is true.
+Your repository. Required if [show_contribution_banner](/amend_project/configuration/#show-contribution-banner) is true.
 
 ```yaml
 github_repo: alphagov/example-repo
@@ -124,7 +124,7 @@ prevent_indexing: false
 ## `redirects`
 
 A list of redirects, from old to new location. Use this to set up external
-redirects or if [setting `old_paths` in the frontmatter](docs/frontmatter.md#old_paths) doesn't work.
+redirects or if [setting `old_paths` in the frontmatter](/frontmatter.html#old-paths) doesn't work.
 
 ```yaml
 redirects:
@@ -165,7 +165,7 @@ service_link: "/"
 ## `show_contribution_banner`
 
 Show a block at the bottom of the page that links to the page source, so readers
-can easily contribute back to the documentation. If turned on [github_repo](#github-repo) is
+can easily contribute back to the documentation. If turned on [github_repo](/amend_project/configuration/#github-repo) is
 required.
 
 Off by default.
@@ -178,7 +178,7 @@ github_repo: alphagov/example-repo
 ## `source_urls`
 
 Customise the URLs that the contribution banner links to. Only useful if
-[show_contribution_banner](#show_contribution_banner) is turned on. By default, "Report issue" links
+[show_contribution_banner](/amend_project/configuration/#show-contribution-banner) is turned on. By default, "Report issue" links
 to raising a GitHub issue but by modifying the `report_issue_url` it can link to an email address
 or another page.
 
@@ -220,8 +220,6 @@ If set to `false`, the red banner will not appear when the page needs to be revi
 
 See the separate [documentation for page expiry][expiry] for more details.
 
-[expiry]: https://tdt-documentation.london.cloudapps.digital/page-expiry.html#page-expiry-and-review
-
 ## `show_review_banner`
 
 Decides whether or not to display the page review banner, regardless of whether the page needs to be reviewed or not.
@@ -232,4 +230,4 @@ If set to `false`, the banner will not be displayed.
 
 See the separate [documentation for page expiry][expiry] for more details.
 
-[expiry]: https://tdt-documentation.london.cloudapps.digital/page-expiry.html#page-expiry-and-review
+[expiry]: /review_project/page-expiry/#page-expiry-and-review
