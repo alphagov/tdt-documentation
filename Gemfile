@@ -11,3 +11,6 @@ gem 'govuk_tech_docs'
 gem 'therubyracer'
 
 gem 'middleman-gh-pages'
+
+# Include linter to check for dead internal links
+gem 'html-proofer'
