@@ -1,0 +1,60 @@
+---
+title: Get started
+weight: 21
+last_reviewed_on: 2020-07-01
+review_in: 1 year
+---
+
+# Get started
+
+The following instructions assume that you have a Mac laptop.
+
+You must set up the following on your local machine:
+
+- administrator rights
+- [Xcode command line interface tools][xcode]
+- [Ruby programming language][ruby]
+- [Middleman static site generator][middleman]
+
+## Administrator rights on your laptop
+
+If you are a Government Digital Service (GDS) employee, raise a ticket on the [GDS Web Help Desk] to request administrator rights on your laptop.
+
+If you are not a GDS employee, follow your internal IT processes.
+
+## Install Xcode command line interface tools
+
+1. Go to [Apple Developer Downloads].
+1. Search for "Xcode".
+1. Select the appropriate __Command Line Tools (macOS x.x) for Xcode x.x__ and download the file.
+1. Install the file.
+
+If you have a software centre for your department, you should be able to install the Xcode command line tools through this software centre.
+
+## Install Ruby
+
+You can install [Ruby][ruby] to any location on your local machine.
+
+You can install Ruby in multiple ways, for example using [Ruby Version Manager][rvm] (RVM) or [rbenv]. These instructions assume you are using RVM.
+
+1. Run the following in the command line to install the ruby version manager:
+
+    ```yaml
+    `\curl -sSL https://get.rvm.io | bash -s stable --ruby`
+    ```
+
+1. Check the [Ruby downloads page][ruby-downloads] for the latest version of Ruby.
+
+1. Run `rvm install ruby-x.x.x` to install the latest version of [Ruby][ruby].
+
+## Install Middleman
+
+You can install [Middleman][middleman] to any location on your local machine.
+
+Run the following in the command line to install Middleman:
+
+```yaml
+gem install middleman
+```
+
+<%= partial "partials/links" %>

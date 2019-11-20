@@ -1,0 +1,123 @@
+---
+title: Write your content
+weight: 41
+last_reviewed_on: 2020-07-01
+review_in: 1 year
+---
+# Write your content
+
+You can write your content in Markdown or HTML when using the Tech Doc Template.
+
+## Insert a table
+
+You can insert a table using either Markdown or HTML.
+
+Use Markdown when there are no specific formatting requirements.
+
+Use HTML when there are specific formatting requirements, for example to ensure that text in cells do not wrap.
+
+### Create table using Markdown
+
+Use Markdown when there are no specific formatting requirements.
+
+This example is a left-aligned table.
+
+You should include `<div style="height:1px;font-size:1px;">&nbsp;</div>` before and after each table.
+
+```bash
+<div style="height:1px;font-size:1px;">&nbsp;</div>
+```
+```bash
+|Column header|Column header|
+|:---|:---|
+|content|content|
+|content|content|
+```
+```bash
+<div style="height:1px;font-size:1px;">&nbsp;</div>
+```
+
+You can change the alignment of the text:
+
+- Centre: `|:---:|`
+- Right: `|---:|`
+
+Add more columns and rows as needed.
+
+### Create table using HTML
+
+You should create tables using HTML when there are specific formatting requirements.
+
+The following code is an example of a 2 column 2 row table with no text wrapping.
+
+```bash
+<div style = "overflow-x:auto;">
+<table style="width:100%">
+<tr>
+<th nowrap>Header 1</th>
+<th>Header 2</th>
+</tr>
+<tr>
+<td nowrap><code>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et enim quis arcu pharetra aliquet. Maecenas posuere tellus arcu, a suscipit dui posuere eu. Nunc vestibulum ligula sit amet eros euismod accumsan. </code></td>
+<td nowrap>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et enim quis arcu pharetra aliquet. Maecenas posuere tellus arcu, a suscipit dui posuere eu. Nunc vestibulum ligula sit amet eros euismod accumsan. </td>
+</tr>
+</table>
+</div>
+```
+
+## Create a link
+
+You can create links using either Markdown or HTML.
+
+To create a link in Markdown, use the following:
+
+```yaml
+[link text](link address)
+```
+
+For example:
+
+```yaml
+[The Google home page](http://www.google.co.uk)
+```
+
+To create a link in HTML, use the following:
+
+```bash
+<a href="link address">link text</a>
+```
+
+You can write the link in HTML with a `target="blank"` element to make the link open in a new internet browser tab by default:
+
+```bash
+<a href="link address" target="blank">link text</a>
+```
+
+## Insert an image
+
+To insert an image into your content, use the following:
+
+```bash
+<%= image_tag "image file", { :alt => 'image alt text' } %>
+```
+
+You must include alt text for an image if the image has not been explained in surrounding content, due to accessibility requirements.
+
+## Insert a warning
+
+Use the warning text component when you need to warn users about something important, such as legal consequences of an action, or lack of action, that they might take.
+
+This warning text format is consistent with the [GOV.UK Design System warning text][design-system].
+
+To insert a warning, use the following:
+
+```ruby
+<%%= warning_text('insert warning text here') %>
+```
+
+## Use the GOV.UK Design System
+
+Use [GOV.UK Design System](https://design-system.service.gov.uk/) elements in your documentation to ensure your content complies with accessibility regulations.
+
+
+<%= partial "partials/links" %>
