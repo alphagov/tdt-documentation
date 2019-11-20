@@ -11,185 +11,68 @@ You can create a technical documentation site that splits its content across mul
 
 This is suitable for documentation sites that have too much content for the single page format.
 
+Examples include the
+
+- [GOV.UK PaaS technical documentation](https://docs.cloud.service.gov.uk/)
+- [GOV.UK Pay technical documentation](https://docs.payments.service.gov.uk/#gov-uk-pay-documentation)
+
 You should use the [search feature](/create_project/create_new_project/#enable-search) with multipage documentation sites.
 
-## Basic multipage
+## Amend the tech-docs.yml file
 
-You can split the content into multiple individual pages. An example is the [GOV.UK PaaS technical documentation](https://docs.cloud.service.gov.uk/).
-
-### Amend the tech-docs.yml file
-
-Add the following code to your project’s `tech-docs.yml` file if necessary:
+Add the following code to your project’s `config/tech-docs.yml` file if necessary:
 
 ```
 # Enable multipage navigation in the sidebar
 multipage_nav: true
 ```
 
-### Repo folder structure
+## Create the multipage folder structure
 
-A typical single page documentation repo has this folder structure:
+Each folder inside the `source` folder represents one documentation page.
 
-![](/images/Single_page.svg)
+For each page, create a content folder and put an `index.html.md.erb` file into that folder. This `index.html.md.erb` file is the [content file]((/amend_project/content/#change-your-content)).
 
-A basic multipage documentation repo can have this structure:
+Example structure:
 
-![](/images/Basic_multipage.svg)
+IMAGE
 
-You must amend the documentation repo folder structure to reflect this structure.
+## Amend the index.html.md.erb file(s)
 
-### Create multiple .html.md.erb files
+Add a weight argument and value to the frontmatter of each .html.md.erb file. This builds the structure of the multipage documentation.
 
-Basic multipage requires multiple `.html.md.erb` files in the tech docs repo __source__ folder.
+For example:
 
-Each `.html.md.erb` file relates to one separate page within the tech docs, and references the markdown files in the associated folder.
-
-Additionally, the tech doc repo must have at least one `.html.md.erb` file in the __source__ folder named `index.html.md.erb`.
-
-The .html.md.erb files must not have the same name as the folders that the .html.md.erb files use partials refer to.
-
-For example, you cannot have a support.html.md.erb file that contains the partial `PARTIAL`.
-
-### Amend the multiple .html.md.erb files
-
-1. Add a weight argument and value to the title of each .html.md.erb file. This builds the structure of the multipage documentation.
-
-    For example:
-
-    ```bash
-    ---
-    title: "Product Technical Documentation"
-    ---
-    ```
-
-    becomes
-
-    ```bash
-    ---
-    title: "Product Technical Documentation"
-    weight: 10
-    ---
-    ```
-
-    Higher weights mean that the content is lower down in the documentation hierarchy. An easy way to remember this is to think “heavier pages sink to the bottom”.
-
-    For example, a single `.html.md.erb` file becomes multiple `.html.md.erb` files:
-
-    ```
-    <div style="height:1px;font-size:1px;">&nbsp;</div>
-
-    |Single page|Multipage|
-    |:---|:---|
-    |---<br>weight: 10<br>title: "Product Technical Documentation"<br>---<br><br>PARTIAL|---<br>weight: 10<br>title: "Product Technical Documentation"<br>---<br><br>PARTIAL|
-    ||---<br>weight: 10<br>title: "Product Technical Documentation"<br>---<br><br>PARTIAL|
-    ||---<br>weight: 20<br>title: "Product Technical Documentation"<br>---<br><br>PARTIAL|
-    ||---<br>weight: 30<br>title: "Product Technical Documentation"<br>---<br><br>PARTIAL|
-
-    <div style="height:1px;font-size:1px;">&nbsp;</div>
-    ```
-
-### Add H1 heading if required
-
-Add an H1 heading to either the `.html.md.erb` file or at the start of the first markdown file for each individual content page.
-
-If there is an H1 heading in both, you will see two H1s when the documentation site builds and renders in your internet browser.
-
-## Nested multipage
-
-You can split the content into multiple individual pages, and can have pages "nested" within one another. Two examples:
-
-- [GOV.UK PaaS technical documentation - Deploying services](https://docs.cloud.service.gov.uk/deploying_services/)
-- [GOV.UK Pay technical documentation - Switching to live](https://docs.payments.service.gov.uk/switching_to_live/#switching-to-live)
-
-### Amend the tech-docs.yml file
-
-Add the following to your project’s `tech-docs.yml` file if necessary:
-
-```
-# Enable multipage navigation in the sidebar
-multipage_nav: true
+```bash
+---
+title: "Product Technical Documentation"
+---
 ```
 
-### Repo folder structure
+becomes
 
-A typical single page documentation repo has this folder structure:
+```bash
+---
+title: "Product Technical Documentation"
+weight: 10
+---
+```
 
-![](/images/Single_page.svg)
+Higher weights mean that the content is lower down in the documentation hierarchy. A way to remember this is to think “heavier pages sink to the bottom”.
 
-A nested multipage documentation repo can have this structure:
+Make sure every individual page starts with an H1 heading.
 
-![](/images/Nested_multipage.svg)
+## Nest pages within pages (optional)
 
-You must amend the documentation repo folder structure to reflect this structure.
+You can nest pages within each other.
 
-### Create multiple .html.md.erb files
+To do this, create content folders inside content folders with `index.html.md.erb` content files.
 
-Basic multipage requires multiple `.html.md.erb` files in the tech docs repo __source__ folder.
+IMAGE
 
-Each `.html.md.erb` file relates to one separate page within the tech docs, and references the markdown files in the associated folder.
+Each `.html.md.erb` file inside a nested folder must have a weight value that preserves the overall hierarchy both within the nested content and compared to the other non-nested content.
 
-Additionally, the tech doc repo must have at least one `.html.md.erb` file in the __source__ folder named `index.html.md.erb`.
+An example of this content structure is the GOV.UK Pay technical documentation on switching to live:
 
-### Amend the multiple .html.md.erb files
-
-1. Add a weight argument and value to the title of each .html.md.erb file to build the structure of the multipage documentation.
-
-    For example:
-
-    ```bash
-    ---
-    title: "Product Technical Documentation"
-    ---
-    ```
-
-    becomes
-
-    ```bash
-    ---
-    title: "Product Technical Documentation"
-    weight: 10
-    ---
-    ```
-
-    Higher weights mean that the content is lower down in the documentation hierarchy. An easy way to remember this is to think “heavier pages sink to the bottom”.
-
-    For example, a single `.html.md.erb` file becomes multiple `.html.md.erb` files:
-
-    <div style="height:1px;font-size:1px;">&nbsp;</div>
-
-    |Single page|Multipage|
-    |:---|:---|
-    |---<br>weight: 10<br>title: "Product Technical Documentation"<br>---<br><br>PARTIAL|---<br>weight: 10<br>title: "Product Technical Documentation"<br>---<br><br>PARTIAL|
-    ||---<br>weight: 10<br>title: "Product Technical Documentation"<br>---<br><br>PARTIAL|
-    ||---<br>weight: 20<br>title: "Product Technical Documentation"<br>---<br><br>PARTIAL|
-    ||---<br>weight: 30<br>title: "Product Technical Documentation"<br>---<br><br>PARTIAL|
-
-    <div style="height:1px;font-size:1px;">&nbsp;</div>
-
-### Add H1 heading if required
-
-Add an H1 heading to either the `.html.md.erb` file or at the start of the first markdown file for each individual content page.
-
-If there is an H1 heading in both, you will see two H1s when the documentation site builds and renders in your internet browser.
-
-### Create folder for nested content .html.md.erb files
-
-Refer to the GOV.UK PaaS technical documentation repo [nested content folder](https://github.com/alphagov/paas-tech-docs/tree/master/source/deploying_services) as an example.
-
-1. Create a folder within the __source__ folder. This folder is where the `.html.md.erb` files for your nested content must live.
-
-1. Create an `index.html.md.erb` file within the nested content folder. This file will be the "wrapper" for the nested content. The wrapper can refer to another content file through partials or have the content in itself.
-
-    Note that each `.html.md.erb` must have a weight value that preserves the overall hierarchy both within the nested content and compared to the other non-nested content.
-
-1. Create sub-folders for each nested page under the "wrapper".
-
-1. Create an `index.html.md.erb` file within each sub-folder. Each `.html.md.erb` file can refer to another content file through partials or have the content in itself.
-
-    Note that each `.html.md.erb` file must have a weight value that preserves the overall hierarchy both within the nested content and compared to the other non-nested content.
-
-### Add H1 heading if required
-
-Add an H1 heading to either the `.html.md.erb` file or at the start of the first markdown file for each individual content page.
-
-If there is an H1 heading in both, you will see two H1s when the documentation site builds and renders in your internet browser.
+- [documentation](https://docs.payments.service.gov.uk/switching_to_live/#switching-to-live)
+- [GitHub folder](https://github.com/alphagov/pay-tech-docs/tree/master/source/switching_to_live)
