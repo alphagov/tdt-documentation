@@ -1,6 +1,6 @@
 ---
-title: "Build a single page site"
-weight: 23
+title: "Structure your documentation"
+weight: 32
 last_reviewed_on: 2019-10-03
 review_in: 1 day
 ---
@@ -85,3 +85,75 @@ This `index.html.md.erb` will build a documentation site with the following stru
 - Introducution
 - Who is this documentation for?
 - Set up the client
+
+## Build a multipage documentation site
+
+You can create a technical documentation site that splits its content across multiple pages.
+
+This is suitable for documentation sites that have too much content for the single page format.
+
+Examples include the:
+
+- [GOV.UK PaaS technical documentation](https://docs.cloud.service.gov.uk/)
+- [GOV.UK Pay technical documentation](https://docs.payments.service.gov.uk/#gov-uk-pay-documentation)
+
+You should use the [search feature](/create_project/create_new_project/#enable-search) with multipage documentation sites.
+
+## Amend the tech-docs.yml file
+
+Add the following code to your project’s `config/tech-docs.yml` file if necessary:
+
+```
+# Enable multipage navigation in the sidebar
+multipage_nav: true
+```
+
+## Create the multipage folder structure
+
+Each folder inside the `source` folder represents one documentation page.
+
+For each page, create a content folder and put an `index.html.md.erb` file into that folder. This `index.html.md.erb` file is the [content file]((/amend_project/content/#change-your-content)).
+
+Example structure:
+
+IMAGE
+
+## Amend the index.html.md.erb file(s)
+
+Add a weight argument and value to the frontmatter of each .html.md.erb file. This builds the structure of the multipage documentation.
+
+For example:
+
+```bash
+---
+title: "Product Technical Documentation"
+---
+```
+
+becomes
+
+```bash
+---
+title: "Product Technical Documentation"
+weight: 10
+---
+```
+
+Higher weights mean that the content is lower down in the documentation hierarchy. A way to remember this is to think “heavier pages sink to the bottom”.
+
+Make sure every individual page starts with an H1 heading.
+
+## Nest pages within pages (optional)
+
+You can nest pages within each other.
+
+To do this, create content folders inside content folders with `index.html.md.erb` content files.
+
+IMAGE
+
+Each `.html.md.erb` file inside a nested folder must have a weight value that preserves the overall hierarchy both within the nested content and compared to the other non-nested content.
+
+An example of this content structure is the GOV.UK Pay technical documentation on switching to live:
+
+- [documentation](https://docs.payments.service.gov.uk/switching_to_live/#switching-to-live)
+- [GitHub folder](https://github.com/alphagov/pay-tech-docs/tree/master/source/switching_to_live)
