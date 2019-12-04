@@ -35,7 +35,7 @@ github_repo: alphagov/tdt-documentation
 enable_search: true
 
 # Ownership for page reviews
-default_owner_slack: '#docs-repos'
+default_owner_slack: '#tech-writers'
 owner_slack_workspace: gds
 
 # Enable GOV.UK crown logo
