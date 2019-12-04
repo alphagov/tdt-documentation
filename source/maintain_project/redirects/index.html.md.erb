@@ -1,10 +1,20 @@
 ---
-title: "Set up redirects"
+title: Set up redirects
 weight: 52
-last_reviewed_on: 2019-10-03
-review_in: 1 day
+last_reviewed_on: 2019-12-04
+review_in: 5 months
 ---
 
-# Set up redirects
+# Setting up redirects
 
-Set up redirects
+If you do something that changes the URL of a page in your documentation, you should set up a redirect to the new URL. Redirecting means that other places linking to your old URL will end up to your new one.
+
+For example, if you restructure the page hierarchy in you documentation, URLs will change, and you should set up redirects.
+
+The Tech Docs Template allows you to set up redirects in either:
+
+- [the global configuration file][redirect-global]
+- [the frontmatter of the page whose URL changed][redirect-frontmatter]
+- [your `config.rb` file][redirect-configrb]
+
+<%= partial "partials/links" %>
