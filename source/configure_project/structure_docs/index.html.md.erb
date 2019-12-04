@@ -9,13 +9,13 @@ review_in: 1 day
 
 > COMBINE SINGLE PAGE AND MULTIPAGE CONTENT INTO ONE SECTION
 
-You can create a technical documentation site that contains all of its content in a single page. An example is the [GOV.UK Notify Java documentation](https://docs.notifications.service.gov.uk/java.html).
+You can create a technical documentation site that contains all of its content in a single page. An example is the [GOV.UK Notify Java documentation][single-page-example].
 
 This is suitable for documentation sites that have do not have a lot of content, and do not need to have topics split into individual pages.
 
 ## Create the single page folder structure
 
-When you [create a new project](create_new_project/#create-a-new-documentation-project), that project has a source folder containing:
+When you [create a new project][create-project], that project has a source folder containing:
 - a `documentation/index.md` content file
 - an `index.html.md.erb` file
 
@@ -96,10 +96,10 @@ This is suitable for documentation sites that have too much content for the sing
 
 Examples include the:
 
-- [GOV.UK PaaS technical documentation](https://docs.cloud.service.gov.uk/)
-- [GOV.UK Pay technical documentation](https://docs.payments.service.gov.uk/#gov-uk-pay-documentation)
+- [GOV.UK PaaS technical documentation][paas-docs]
+- [GOV.UK Pay technical documentation][pay-docs]
 
-You should use the [search feature](/create_project/create_new_project/#enable-search) with multipage documentation sites.
+You should use the [search feature][search-feature] with multipage documentation sites.
 
 ## Amend the tech-docs.yml file
 
@@ -114,7 +114,7 @@ multipage_nav: true
 
 Each folder inside the `source` folder represents one documentation page.
 
-For each page, create a content folder and put an `index.html.md.erb` file into that folder. This `index.html.md.erb` file is the [content file]((/amend_project/content/#change-your-content)).
+For each page, create a content folder and put an `index.html.md.erb` file into that folder. This `index.html.md.erb` file is the [content file][write-content].
 
 Example structure:
 
@@ -157,5 +157,7 @@ Each `.html.md.erb` file inside a nested folder must have a weight value that pr
 
 An example of this content structure is the GOV.UK Pay technical documentation on switching to live:
 
-- [documentation](https://docs.payments.service.gov.uk/switching_to_live/#switching-to-live)
-- [GitHub folder](https://github.com/alphagov/pay-tech-docs/tree/master/source/switching_to_live)
+- [documentation pages][nested-example]
+- [GitHub folder][nested-example-code]
+
+<%= partial "partials/links" %>
