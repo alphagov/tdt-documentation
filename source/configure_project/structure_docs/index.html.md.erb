@@ -7,63 +7,21 @@ review_in: 1 day
 
 # Structure your documentation
 
-> COMBINE SINGLE PAGE AND MULTIPAGE CONTENT INTO ONE SECTION
-
-## Build a single page documentation site
-
-You can create a technical documentation site that contains all of its content in a single page. An example is the [GOV.UK Notify Java documentation][single-page-example].
-
-This is suitable for documentation sites that have do not have a lot of content, and do not need to have topics split into individual pages.
-
-## Create the single page folder structure
-
 When you [create a new project][create-project], that project has a source folder containing:
 - a `documentation/index.md` content file
 - an `index.html.md.erb` file
 
 The `index.html.md.erb` file contains a `partial` that refers to the `documentation/index.md` content file.
 
-To build the single page of documentation, you can do either of the following:
+To structure your documentation, add content directly to the `index.html.md.erb` file.
 
-- create more `.md` content files and add partials to the `index.html.md.erb` file that refer to those content files
-- add content directly to the `index.html.md.erb` file
+For example, an `index.html.md.erb` file with the following sections:
 
-### Use multiple .md content files
+- an introduction
+- a "Who is this documentation for?" section
+- a "Set up the API client" section
 
-In this example, you have three `.md` content files:
-
-- an introduction named `index.md` in the `documentation` folder
-- a "Who is this documentation for?" section named `who-docs.md` in the `documentation/introduction` folder
-- a "Set up the API client" section named `set_up_client` in the `documentation/introduction` folder
-
-The `index.html.md.erb` file would look like this:
-
-```bash
----
-title: Tech Docs
----
-
-<%%= partial 'documentation/index' %>;
-<%%= partial 'documentation/introduction/who-docs' %>;
-<%%= partial 'documentation/introduction/set_up_client' %>;
-```
-
-This `index.html.md.erb` will build a documentation site with the following structure:
-
-- Introducution
-- Who is this documentation for?
-- Set up the client
-
-
-### Add content to index.html.md.erb file
-
-In this example, you have three `.md` content files:
-
-- an introduction named `index.md` in the `documentation` folder
-- a "Who is this documentation for?" section named `who-docs.md` in the `documentation/introduction` folder
-- a "Set up the API client" section named `set_up_client` in the `documentation/introduction` folder
-
-Add the content in these files into the `index.html.md.erb` file. The `index.html.md.erb` file would look like this:
+That `index.html.md.erb` file could look like this:
 
 ```bash
 ---
@@ -84,7 +42,7 @@ CONTENT
 
 ```
 
-This `index.html.md.erb` will build a documentation site with the following structure:
+This `index.html.md.erb` will build a single page documentation site with the following structure:
 
 - Introducution
 - Who is this documentation for?
@@ -103,7 +61,7 @@ Examples include the:
 
 You should use the [search feature][search-feature] with multipage documentation sites.
 
-## Amend the tech-docs.yml file
+### Amend the tech-docs.yml file
 
 Add the following code to your project’s `config/tech-docs.yml` file if necessary:
 
@@ -112,7 +70,7 @@ Add the following code to your project’s `config/tech-docs.yml` file if necess
 multipage_nav: true
 ```
 
-## Create the multipage folder structure
+### Create the multipage folder structure
 
 Each folder inside the `source` folder represents one documentation page.
 
@@ -122,7 +80,7 @@ Example structure:
 
 IMAGE
 
-## Amend the index.html.md.erb file(s)
+### Amend the index.html.md.erb file(s)
 
 Add a weight argument and value to the frontmatter of each .html.md.erb file. This builds the structure of the multipage documentation.
 
@@ -147,7 +105,7 @@ Higher weights mean that the content is lower down in the documentation hierarch
 
 Make sure every individual page starts with an H1 heading.
 
-## Nest pages within pages (optional)
+### Nest pages within pages (optional)
 
 You can nest pages within each other.
 
