@@ -12,7 +12,7 @@ You can split the content into multiple individual pages. An example is the [GOV
 
 ### Amend the tech-docs.yml file
 
-Add this to your project’s `tech-docs.yml` file, or set it to true if it is already there:
+Add this to your project’s `tech-docs.yml` file, or set it to __true__ if it is already there:
 
 ```
 # Enable multipage navigation in the sidebar
@@ -98,7 +98,7 @@ You can split the content into multiple individual pages, and can have pages "ne
 
 ### Amend the tech-docs.yml file
 
-Add this to your project’s `tech-docs.yml` file, or set it to `true` if it is already there:
+Add this to your project’s `tech-docs.yml` file, or set it to __true__ if it is already there:
 
 ```
 # Enable multipage navigation in the sidebar
