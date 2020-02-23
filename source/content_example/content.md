@@ -46,15 +46,15 @@ This page provides examples of different content types.
 
 ## Tables
 
-You can create tables using either markdown or HTML.
+You can create tables using either Markdown or HTML.
 
-Use markdown when there are no specific formatting requirements.
+Use Markdown when there are no specific formatting requirements.
 
 Use HTML when there are specific formatting requirements, for example to ensure that text in cells do not wrap.
 
 ### Create table using markdown
 
-Use markdown when there are no specific formatting requirements.
+Use Markdown when there are no specific formatting requirements.
 
 This example is a left-aligned table.
 
@@ -87,7 +87,7 @@ You should create tables using HTML when there are specific formatting requireme
 The following code is an example of a 2 column 2 row table with no text wrapping.
 
 ```bash
-<div style = "overflow-x:auto;"> 
+<div style = "overflow-x:auto;">
 <table style="width:100%">
 <tr>
 <th nowrap>Header 1</th>
