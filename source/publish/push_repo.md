@@ -97,7 +97,7 @@ government services.
 
 With some modification, you can also deploy your site with [GitHub
 Pages](https://pages.github.com/), but we do not support this. To do this, you
-could for example use the [`middleman-gh-pages`]
+could for example use the [middleman-gh-pages
 tool](https://github.com/edgecase/middleman-gh-pages), which we do not
 support. We also cannot guarantee that all features of the tool will work if
 you deploy your site with GitHub Pages.
