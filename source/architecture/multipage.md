@@ -87,11 +87,11 @@ For example, you cannot have a support.html.md.erb file that contains the partia
 
 Add an H1 heading to either the `.html.md.erb` file or at the start of the first markdown file for each individual content page.
 
-If there is an H1 heading in both, you will see two H1s when the documentation site builds and renders in your internet browser.
+If there is an H1 heading in both, you will see 2 H1s when the documentation site builds and renders in your internet browser.
 
 ## Nested multipage
 
-You can split the content into multiple individual pages, and can have pages "nested" within one another. Two examples:
+You can split the content into multiple individual pages, and can have pages "nested" within one another, for example:
 
 - [GOV.UK PaaS technical documentation - Deploying services](https://docs.cloud.service.gov.uk/deploying_services/)
 - [GOV.UK Pay technical documentation - Switching to live](https://docs.payments.service.gov.uk/switching_to_live/#switching-to-live)
