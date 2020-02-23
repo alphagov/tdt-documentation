@@ -28,7 +28,7 @@ This is suitable for documentation sites that have do not have a lot of content,
 
 ### Add partial lines
 
-In this example, you have three content files:
+In this example, you have 3 content files:
 
 - an introduction named `index.md` in the `documentation` folder
 - a "Who is this documentation for?" section named `who-docs.md` in the `documentation/introduction` folder
