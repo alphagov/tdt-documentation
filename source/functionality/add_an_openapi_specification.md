@@ -16,7 +16,7 @@ This can be a relative path to a file in your tech docs repo folder, for example
 api_path: ./source/pets.yaml
 ```
 
-This can also be a URL to a file hosted elsewhere, for example: 
+This can also be a URL to a file hosted elsewhere, for example:
 
 ```
 api_path: https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v3.0/petstore.yaml
@@ -30,7 +30,7 @@ Add the following line to the content file that you want to output the API infor
 api>
 ```
 
-You can specify individual endpoints to be outputted rather than all API information, for example::
+You can specify individual endpoints to be outputted rather than all API information, for example:
 
 ```
 api> /pets
