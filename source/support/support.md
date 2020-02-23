@@ -1,14 +1,14 @@
 # Support
 
-## Report issues 
+## Report issues
 
 Report any problems or issues by:
 
-- contacting the GDS technical writing community on [email](mailto:technical-writers@digital.cabinet-office.gov.uk) or [slack](https://gds.slack.com/messages/CAD579Y1X/)
-- posting in the [tech docs format](https://gds.slack.com/messages/CADK8N58B/) slack channel
-- opening an issue on the [tech docs template repo](https://github.com/alphagov/tech-docs-template/issues)
+- contacting the GDS technical writing community on [email](mailto:technical-writers@digital.cabinet-office.gov.uk) or [Slack](https://gds.slack.com/messages/CAD579Y1X/)
+- posting in the [tech docs format](https://gds.slack.com/messages/CADK8N58B/) Slack channel
+- opening an issue on the [Tech Docs Template repo](https://github.com/alphagov/tech-docs-template/issues)
 
-## Github repos
+## GitHub repos
 
 The repos are:
 
@@ -31,7 +31,3 @@ The repos are:
 |Reliability Engineering|[https://reliability-engineering.cloudapps.digital](https://reliability-engineering.cloudapps.digital)|[https://github.com/alphagov/reliability-engineering](https://github.com/alphagov/reliability-engineering)|
 
 <div style="height:1px;font-size:1px;">&nbsp;</div>
-
-In development:
-
-- GOV.UK Verify - github repo TBC
