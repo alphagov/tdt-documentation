@@ -8,7 +8,6 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
 gem 'govuk_tech_docs'
 
-gem 'therubyracer'
 
 gem 'middleman-gh-pages'
 

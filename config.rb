@@ -11,6 +11,7 @@ after_build do |builder|
       { :assume_extension => true,
         :disable_external => true,
         :allow_hash_href => true,
+        :empty_alt_ignore => true,
         :url_swap => { config[:tech_docs][:host] => "" } }).run
   rescue RuntimeError => e
     abort e.to_s
