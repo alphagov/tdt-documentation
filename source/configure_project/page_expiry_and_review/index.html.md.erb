@@ -17,16 +17,16 @@ For `show_expiry: true`, the banner at the bottom turns red if it's past the exp
 If the page doesn't need to be reviewed, we show a blue box with the
 last-reviewed date, when it needs review again, and the owner.
 
-![](/images/not-expired-page.png alt="Banner that shows that page is not expired")
+<%= image_tag "/images/not-expired-page.png", { :alt => 'Banner that shows that page is not expired' } %>
 
 If the page needs to be reviewed, we show a red box saying the page might not
 be accurate.
 
-![](/images/expired-page.png alt="Banner that shows that page is expired")
+<%= image_tag "/images/expired-page.png", { :alt => 'Banner that shows that page is expired' } %>
 
 Setting `show_expiry: false` generates a blue banner with the last reviewed date. This banner stays the same whether the page needs to be reviewed or not.  The banner does not mention when the page needs to be reviewed next or who the owner is.
 
-![](/images/last-reviewed-only.png alt="Banner that shows that page needs to be reviewed")
+<%= image_tag "/images/last-reviewed-only.png", { :alt => 'Banner that shows that page needs review' } %>
 
 This feature relies on JavaScript being enabled on the user's browser to
 display the relevant notices.
