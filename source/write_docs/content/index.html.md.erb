@@ -91,7 +91,11 @@ You can write the link in HTML with a `target="blank"` element to make the link 
 
 ## Images
 
-`!``[]``(LOCATION_OF_IMAGE)`
+You must include alt text with image links.
+
+```bash
+<%= image_tag "IMAGE LOCATION", { :alt => 'IMAGE ALT TEXT' } %>
+```
 
 ## Insert a warning
 
@@ -104,15 +108,11 @@ Insert the following Ruby code into your content file:
 ```ruby
 <%%= warning_text('INSERT WARNING TEXT HERE') %>
 ```
-## Have ERB in code blocks
 
 ## Use the design system
 
-Link to the design system
+Use [design system](https://design-system.service.gov.uk/) elements in your documentation to ensure your content complies with accessibility regulations.Link to the design system
 
-https://design-system.service.gov.uk/
-
-https://design-system.service.gov.uk/get-started/
 
 
 <%= partial "partials/links" %>

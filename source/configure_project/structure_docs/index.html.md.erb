@@ -76,10 +76,6 @@ Each folder inside the `source` folder represents one documentation page.
 
 For each page, create a content folder and put an `index.html.md.erb` file into that folder. This `index.html.md.erb` file is the [content file][write-content].
 
-Example structure:
-
-IMAGE
-
 ### Amend the index.html.md.erb file(s)
 
 Add a weight argument and value to the frontmatter of each .html.md.erb file. This builds the structure of the multipage documentation.
@@ -110,8 +106,6 @@ Make sure every individual page starts with an H1 heading.
 You can nest pages within each other.
 
 To do this, create content folders inside content folders with `index.html.md.erb` content files.
-
-IMAGE
 
 Each `.html.md.erb` file inside a nested folder must have a weight value that preserves the overall hierarchy both within the nested content and compared to the other non-nested content.
 
