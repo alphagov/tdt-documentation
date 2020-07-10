@@ -74,7 +74,7 @@ The following code is an example of a 2 column 2 row table with no text wrapping
 ## Links
 
 ```bash
-[LINK TEXT](LINK ADDRESS)
+[link text](link address)
 ```
 
 For example:
@@ -86,7 +86,7 @@ For example:
 You can write the link in HTML with a `target="blank"` element to make the link open in a new internet browser tab by default:
 
 ```bash
-<a href="LINK ADDRESS" target="blank">LINK TEXT</a>
+<a href="link address" target="blank">link text</a>
 ```
 
 ## Images
@@ -94,7 +94,7 @@ You can write the link in HTML with a `target="blank"` element to make the link 
 You must include alt text with image links.
 
 ```bash
-<%= image_tag "IMAGE LOCATION", { :alt => 'IMAGE ALT TEXT' } %>
+<%= image_tag "image location", { :alt => 'image alt text' } %>
 ```
 
 ## Insert a warning
@@ -106,7 +106,7 @@ This warning text format is consistent with the [GOV.UK Design System warning te
 Insert the following Ruby code into your content file:
 
 ```ruby
-<%%= warning_text('INSERT WARNING TEXT HERE') %>
+<%%= warning_text('insert warning text here') %>
 ```
 
 ## Use the design system
