@@ -11,7 +11,7 @@ review_in: 1 day
 
 1. Run the following in the command line:
 
-    ```
+    ```yaml
     middleman init <project_name> -T alphagov/tech-docs-template
     ```
     where `<project_name>` is the name of your project.
@@ -22,11 +22,15 @@ review_in: 1 day
 
 ## Configure your new documentation project
 
+Configure your new documentation project by editing the `config/tech-docs.yml` in a text editor of your choice.
+
+Two common settings to enable are collapsible navigation and search.
+
 ### Enable collapsible navigation
 
 Add the following code to your project's `tech-docs.yml` file if necessary:
 
-```
+```yaml
 # Enable collapsible navigation in the sidebar
 collapsible_nav: true
 ```
@@ -37,10 +41,12 @@ The search function is especially useful for multipage documentation.
 
 Add the following code to your project’s `tech-docs.yml` file if necessary:
 
-```
+```yaml
 # Enable search
 enable_search: true
 ```
+
+See [configure documentation site][global-config] for more information.
 
 ## View your new documentation project
 

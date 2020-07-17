@@ -1,15 +1,76 @@
 ---
-title: Page frontmatter
+title: Configure page settings
 weight: 34
 last_reviewed_on: 2019-10-03
 review_in: 1 day
 ---
 
-# Page frontmatter
+# Configure page settings
 
-"Frontmatter" allows page-specific variables to be included at the top of a template using YAML. For a general introduction on frontmatter, see the [Middleman frontmatter documentation][mm].
+You configure individual pages in your documentation by editing the page frontmatter.
 
-## `last_reviewed_on` and `review_in`
+The page frontmatter contains page-specific variables at the top of the page.
+
+For a general introduction on frontmatter, see the [Middleman frontmatter documentation][mm].
+
+For example:
+
+```yaml
+---
+title: Configure page settings
+weight: 34
+last_reviewed_on: 2019-10-03
+review_in: 1 day
+---
+
+# Configure page settings
+
+You configure individual pages in your documentation by editing the page frontmatter.
+```
+
+<%= warning_text('In a single page documentation site, all of these settings are optional.<br><br>
+In a multipage documentation site, you must include the weight frontmatter.<br><br>
+You should enable or disable settings to increase the usability of your documentation or because of best practice.') %>
+
+The following content defines the required and optional settings you can enable or disable in the page frontmatter, and includes examples.
+
+If you are not sure which settings to enable or disable, [contact the GDS tech writers][contact-email].
+
+## Required frontmatter settings
+
+There are no required frontmatter settings in a single page documentation site.
+
+In a multipage documentation site, you must include the weight frontmatter setting.
+
+### weight
+
+Sets the order of pages in the left hand navigation.
+
+This setting works the same way as page numbers in a book. A lower weight value is higher in the navigation. A higher weight value is lower in the navigation.
+
+For example a page with a weight of 10 will appear higher in the navigation than a page with a weight of 20.
+
+```yaml
+---
+weight: 20
+---
+```
+
+## Optional frontmatter settings
+
+You can enable and disable the following optional settings in the page frontmatter.
+
+### hide_in_navigation
+
+Set `hide_in_navigation: true` to prevent the page from being rendered in the main left hand navigation.
+
+```yaml
+---
+hide_in_navigation: true
+---
+```
+
+### "last_reviewed_on" and "review_in"
 
 These attributes determine the date when the page needs to be reviewed next.
 
@@ -17,21 +78,9 @@ See [page expiry and review documentation][expiry] for more details.
 
 You can use this in combination with the [owner_slack variable](#owner-slack) to set an owner for the page.
 
-## `layout`
+### layout
 
-The layout of the page.
-
-```yaml
----
-layout: core
----
-```
-
-There are 2 available page layouts.
-
-### The `layout` layout (default)
-
-By default, pages will use the `layout` layout. This layout will parse the page and generate a sidebar with a table of contents consisting of each `h2`, `h3`, `h4` heading.
+The layout of the page. By default, pages will use the `layout` layout. This layout will parse the page and generate a sidebar with a table of contents consisting of each `h2`, `h3`, `h4` heading.
 
 ```md
 ---
@@ -47,11 +96,9 @@ layout: layout
 ## Another subheader
 ```
 
-Will generate a page with the headings from the content in the sidebar.
+This layout generates a page with the headings from the content in the sidebar.
 
-### `core` layout
-
-If you want more control about the layout, use `core` layout. This allows you to specify the sidebar manually with a `content_for` block.
+If you want more control about the layout, you can use the `core` layout. This allows you to specify the sidebar manually with a `content_for` block.
 
 ```rb
 ---
@@ -75,7 +122,9 @@ layout: core
 This page does not have a sidebar.
 ```
 
-## `old_paths`
+
+
+### old_paths
 
 Any paths of pages that should redirect to this page.
 
@@ -88,9 +137,9 @@ old_paths:
 ---
 ```
 
-## `owner_slack`
+### owner_slack
 
-The Slack username or channel of the page owner. This can be used to appoint an individual or team as responsible for keeping the page up to date.
+The Slack username or channel of the page owner. Use this to appoint an individual or team as responsible for keeping the page up to date.
 
 ```yaml
 ---
@@ -98,10 +147,19 @@ owner_slack: "#operations-teams"
 ---
 ```
 
-## `source_url`
+### parent
 
-If the contribution banner is turned on, you can override the "View source" link
-using `source_url`.
+Defines the page that should be highlighted as ‘active’ in the navigation.
+
+```yaml
+---
+parent: shaving-yaks.html
+---
+```
+
+### source_url
+
+If the contribution banner is turned on, you can override the "View source" link using `source_url`.
 
 Example:
 
@@ -109,7 +167,7 @@ Example:
 source_url: http://example.org/source.md
 ```
 
-## `title`
+### title
 
 The browser title of the page.
 
@@ -119,36 +177,5 @@ title: My beautiful page
 ---
 ```
 
-## `weight`
-
-Affects the order a page is displayed in the sidebar navigation tree. Lower
-weights float to the top. Higher weights sink to the bottom.
-
-```yaml
----
-weight: 20
----
-```
-
-## `hide_in_navigation`
-
-Set `hide_in_navigation: true` to prevent the page from being rendered in the
-main page tree navigation.
-
-```yaml
----
-hide_in_navigation: true
----
-```
-
-## `parent`
-
-The page that should be highlighted as ‘active’ in the navigation.
-
-```yaml
----
-parent: shaving-yaks.html
----
-```
 
 <%= partial "partials/links" %>

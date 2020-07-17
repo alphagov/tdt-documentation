@@ -1,197 +1,197 @@
 ---
-title: Global configuration options
+title: Configure documentation site
 weight: 31
 last_reviewed_on: 2019-10-03
 review_in: 1 day
 ---
 
-# Global configuration options
+# Configure documentation site
 
-You can configure the site using `config/tech-docs.yml`. See the [PaaS tech docs][global-config-example] for an example.
+You can configure your documentation site by editing the `config/tech-docs.yml` file in a text editor of your choice.
 
-These are all the available options:
-
-## `ga_tracking_id`
-
-Tracking ID from Google Analytics.
+When you create your documentation project, the template creates a `tech-docs.yml` file with the following default settings:
 
 ```yaml
-ga_tracking_id: UA-XXXX-Y
-```
+# Host to use for canonical URL generation (without trailing slash)
+host:
 
-## `github_repo`
+# Header-related options
+show_govuk_logo: true
+service_name: My First Service
+service_link: https://www.larry-the-cat.service.gov.uk
+phase: Beta
 
-Your repository. Required if [show_contribution_banner] is true.
-
-```yaml
-github_repo: alphagov/example-repo
-```
-
-## `github_branch`
-
-Your github branch name. Useful if your default branch is not named master.
-
-```yaml
-github_branch: source
-```
-
-## `google_site_verification`
-
-Adds a [Google Site Verification code] to the meta tags.
-
-```yaml
-google_site_verification: TvDTuyvdstyusadrCSDrctyd
-```
-
-## `enable_search`
-
-Enables search functionality. This indexes pages only and is not recommended for single-page sites.
-
-```yaml
-enable_search: true
-```
-
-## `header_links`
-
-Right hand side navigation.
-
-Example:
-
-```yaml
+# Links to show on right-hand-side of header
 header_links:
+  About: https://www.larry-the-cat.service.gov.uk
+  Get Started: https://www.larry-the-cat.service.gov.uk/get-started
   Documentation: /
+  Support: https://www.larry-the-cat.service.gov.uk/support
+
+# Enables search functionality. This indexes pages only and is not recommended for single-page sites.
+enable_search: false
+
+# Tracking ID from Google Analytics (e.g. UA-XXXX-Y)
+ga_tracking_id:
+
+# Enable multipage navigation in the sidebar
+multipage_nav: false
+
+# Enable collapsible navigation in the sidebar
+collapsible_nav: false
+
+# Table of contents depth – how many levels to include in the table of contents.
+# If your ToC is too long, reduce this number and we'll only show higher-level
+# headings.
+max_toc_heading_level: 6
+
+# Prevent robots from indexing (e.g. whilst in development)
+prevent_indexing: false
+
+show_contribution_banner: true
+github_repo: alphagov/YOUR_REPO
 ```
 
-## `footer_links`
+<%= warning_text('All of these settings are optional.<br><br>
+However, you should enable or disable settings to increase the usability of your documentation or because of best practice.') %>
 
-Links to show in footer.
+The following content defines the default and additional settings you can enable or disable in the `tech-docs.yml` file, and includes examples.
 
-Example:
+If you are not sure which settings to enable or disable, [contact the GDS tech writers][contact-email].
 
-```yaml
-footer_links:
-  Accessibility: /accessibility
-```
+See the [PaaS tech docs config file][global-config-example] for an example `tech-docs.yml` file.
 
-## `host`
+## Default settings
 
-Host to use for canonical URL generation (without trailing slash).
+When you create your documentation project, the template creates a `tech-docs.yml` file with default settings.
 
-Example:
+The following section defines these default settings and tells you how to enable and disable them.
+
+### host
+
+Defines the host used for canonical URL generation (without trailing slash).
 
 ```yaml
 host: https://docs.cloud.service.gov.uk
 ```
 
-## `collapsible_nav`
+### show_govuk_logo
 
-Enable collapsible navigation in the sidebar. Defaults to `false`.
-
-```yaml
-collapsible_nav: true
-```
-
-## `multipage_nav`
-
-Enable multipage navigation in the sidebar. Defaults to `false`.
-
-```yaml
-multipage_nav: true
-```
-
-## `max_toc_heading_level`
-
-Table of contents depth – how many levels to include in the table of contents (ToC). If your ToC is too long, reduce this number and we'll only show higher-level headings.
-
-```yaml
-max_toc_heading_level: 6
-```
-
-## `phase`
-
-```yaml
-phase: "Beta"
-```
-
-## `prevent_indexing`
-
-Prevent robots from indexing (e.g. whilst in development)
-
-```yaml
-prevent_indexing: false
-```
-
-## `redirects`
-
-A list of redirects, from old to new location. Use this to set up external redirects or if [setting `old_paths` in the frontmatter][old-paths] does not work.
-
-```yaml
-redirects:
-  /old-page.html: https://example.org/something-else.html
-  /another/old-page.html: /another/new-page.html
-```
-
-## `service_name`
-
-The service name in the header.
-
-Example:
-
-```yaml
-service_name: "Platform as a Service"
-```
-
-## `full_service_name`
-
-The full service name (maybe with GOV.UK)
-
-Example:
-
-```yaml
-full_service_name: "GOV.UK Pay"
-```
-
-## `service_link`
-
-What the service name in the header links to.
-
-default: '/'
-
-```yaml
-service_link: "/"
-```
-
-## `show_contribution_banner`
-
-Show a block at the bottom of the page that links to the page source, so readers can easily contribute back to the documentation. If turned on [github_repo] is required.
-
-Off by default.
-
-```yaml
-show_contribution_banner: true
-github_repo: alphagov/example-repo
-```
-
-## `source_urls`
-
-Customise the URLs that the contribution banner links to. Only useful if [show_contribution_banner] is turned on. By default, "Report issue" links to raising a GitHub issue but by modifying the `report_issue_url` it can link to an email address or another page.
-
-```yaml
-source_urls:
-  report_issue_url: mailto:support@example.com
-```
-
-## `show_govuk_logo`
-
-Whether to show the GOV.UK crown logo.
-
-default: `true`
+Enables and disables the GOV.UK crown logo in the top left corner of the site. Defaults to `true`.
 
 ```yaml
 show_govuk_logo: true
 ```
 
-## `api_path`
+### service_name
+
+Defines the service name in the header. Defaults to "My First Service" if you do not define it when creating your project.
+
+```yaml
+service_name: "Platform as a Service"
+```
+
+### service_link
+
+What the service name in the header links to. Defaults to "https://www.larry-the-cat.service.gov.uk" if you do not define it when creating your project.
+
+```yaml
+service_link: "https://www.larry-the-cat.service.gov.uk"
+```
+
+### phase
+
+Defines the phase of the service that the documentation is attached to. Defaults to "Beta".
+
+```yaml
+phase: "Beta"
+```
+
+### header_links
+
+Populates the top right banner navigation with links. You can change the number and text of the default links. For example:
+
+```yaml
+header_links:
+  About: https://www.payments.service.gov.uk/#main
+  Get started: https://www.payments.service.gov.uk/getstarted/
+  Documentation: /
+  Support: https://www.payments.service.gov.uk/support/
+  Sign In: https://selfservice.payments.service.gov.uk/login
+```
+### enable_search
+
+Enables search functionality. This indexes pages only, and you should only enable this if you have a multipage documentation site.
+
+```yaml
+enable_search: true
+```
+
+### ga_tracking_id
+
+Insert the Google Analytics tracking ID to enable Google Analytics.
+
+Speak to your technical or engineering community to find out how to enable Google Analytics for your documentation and get a tracking ID.
+
+```yaml
+ga_tracking_id: UA-XXXX-Y
+```
+
+### multipage_nav
+
+Enable multipage navigation in the sidebar. Defaults to `false`.
+
+```yaml
+multipage_nav: false
+```
+
+### collapsible_nav
+
+Enable collapsible navigation in the sidebar. Defaults to `false`.
+
+```yaml
+collapsible_nav: false
+```
+
+### max_toc_heading_level
+
+States how many heading levels to include in the table of contents (ToC). Can take values between 1 and 6. Use a lower number to reduce the length of the ToC. Best practice is to not go higher than 3.
+
+```yaml
+max_toc_heading_level: 6
+```
+
+### prevent_indexing
+
+Prevent robots from indexing.
+
+```yaml
+prevent_indexing: false
+```
+
+### show_contribution_banner
+
+Enable a banner at the bottom of the page that links to the page source, so readers can easily contribute back to the documentation. Defaults to "true".
+
+If you enable this setting, you must also enable the [github_repo] setting.
+
+```yaml
+show_contribution_banner: true
+```
+
+### github_repo
+
+Your documentation project's GitHub repository. You must enable this if you have enabled [show_contribution_banner].
+
+```yaml
+github_repo: alphagov/example-repo
+```
+
+## Additional settings
+
+You can enable and disable the following additional settings in the `tech-docs.yml` file.
+
+### api_path
 
 Define a path to an Open API V3 spec file. This can be a relative file path or a URI to a raw file.
 
@@ -199,28 +199,85 @@ Define a path to an Open API V3 spec file. This can be a relative file path or a
 api_path: ./source/pets.yml
 ```
 
-## `owner_slack_workspace` and `default_owner_slack`
+### footer_links
+
+Defines links to show in the site footer.
+
+```yaml
+footer_links:
+  Accessibility: /accessibility
+```
+
+### full_service_name
+
+The full service name. Include "GOV.UK" if appropriate.
+
+```yaml
+full_service_name: "GOV.UK Pay"
+```
+
+### github_branch
+
+Your project's GitHub master branch name. You can use this if your default branch is not named master.
+
+```yaml
+github_branch: source
+```
+
+### google_site_verification
+
+Adds a [Google Site Verification code] to the meta tags.
+
+```yaml
+google_site_verification: TvDTuyvdstyusadrCSDrctyd
+```
+
+### "owner_slack_workspace" and "default_owner_slack"
 
 These attributes are used to specify the owner of a page.  See [page expiry][expiry] for more information.
 
-## `show_expiry`
+### redirects
 
-Decides whether or not to show a red banner when the page needs to be reviewed.
+A list of redirects from an old location to a new location.
 
-If not present or set to `true`, the red banner will appear when the page needs to be reviewed. This is the default behaviour.
+Use this to set up external redirects or if [setting `old_paths` in the frontmatter][old-paths] does not work.
 
-If set to `false`, the red banner will not appear when the page needs to be reviewed.
+```yaml
+redirects:
+  /old-page.html: https://example.org/something-else.html
+  /another/old-page.html: /another/new-page.html
+```
+
+### show_expiry
+
+Enables and disables displaying a red banner when the page needs to be reviewed.
+
+If not present or set to `true`, the red banner will display when the page needs to be reviewed. This is the default behaviour.
+
+If set to `false`, the red banner will not display when the page needs to be reviewed.
 
 See [page expiry][expiry] for more information.
 
-## `show_review_banner`
 
-Decides whether or not to display the page review banner, regardless of whether the page needs to be reviewed or not.
+### show_review_banner
 
-If not present or set to `true`, the banner will be displayed on the page. This is the default behaviour.
+Enables or disables displaying the page review banner, regardless of whether the page needs to be reviewed or not.
+
+If not present or set to `true`, the banner will always be displayed on the page. This is the default behaviour.
 
 If set to `false`, the banner will not be displayed.
 
 See [page expiry][expiry] for more information.
+
+### source_urls
+
+Customise the URLs that the contribution banner links to. Only enable this if you have enabled [show_contribution_banner].
+
+By default, "Report issue" links to raising a GitHub issue, but by modifying the `report_issue_url`, it can link to an email address or another page.
+
+```yaml
+source_urls:
+  report_issue_url: mailto:support@example.com
+```
 
 <%= partial "partials/links" %>

@@ -23,7 +23,7 @@ For example, an `index.html.md.erb` file with the following sections:
 
 That `index.html.md.erb` file could look like this:
 
-```bash
+```yaml
 ---
 title: Tech Docs
 ---
@@ -65,7 +65,7 @@ You should use the [search feature][search-feature] with multipage documentation
 
 Add the following code to your project’s `config/tech-docs.yml` file if necessary:
 
-```
+```yaml
 # Enable multipage navigation in the sidebar
 multipage_nav: true
 ```
@@ -82,7 +82,7 @@ Add a weight argument and value to the frontmatter of each .html.md.erb file. Th
 
 For example:
 
-```bash
+```yaml
 ---
 title: Product Technical Documentation
 ---
@@ -90,7 +90,7 @@ title: Product Technical Documentation
 
 becomes
 
-```bash
+```yaml
 ---
 title: Product Technical Documentation
 weight: 10
