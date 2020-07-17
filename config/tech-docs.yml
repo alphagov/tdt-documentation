@@ -42,7 +42,7 @@ owner_slack_workspace: gds
 show_govuk_logo: false
 
 redirects:
-  page-expiry.html: configure_project/page_expiry_and_review/#page-expiry-and-review
+  page-expiry.html: configure_project/page_expiry_and_review/#set-review-date-for-pages
   search.html: create_project/create_new_project/#enable-search
-  content.html: write_docs/content/#edit-your-content
+  content.html: write_docs/content/#write-your-content
   create_new_project.html: create_project/create_new_project/#create-a-new-documentation-project
