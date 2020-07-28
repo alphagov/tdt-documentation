@@ -1,13 +1,13 @@
 ---
-title: Configure documentation site
+title: Configure your documentation site
 weight: 31
-last_reviewed_on: 2019-10-03
-review_in: 1 day
+last_reviewed_on: 2020-07-01
+review_in: 1 year
 ---
 
-# Configure documentation site
+# Configure your documentation site
 
-You can configure your documentation site by editing the `config/tech-docs.yml` file in a text editor of your choice.
+You can configure your documentation site by editing the `config/tech-docs.yml` file in a text editor.
 
 When you create your documentation project, the template creates a `tech-docs.yml` file with the following default settings:
 
@@ -52,20 +52,15 @@ show_contribution_banner: true
 github_repo: alphagov/YOUR_REPO
 ```
 
-<%= warning_text('All of these settings are optional.<br><br>
-However, you should enable or disable settings to increase the usability of your documentation or because of best practice.') %>
+<%= warning_text('All of these settings are optional. However, you should enable or disable settings to increase the usability of your documentation or because of best practice.') %>
 
-The following content defines the default and additional settings you can enable or disable in the `tech-docs.yml` file, and includes examples.
+If you are not sure which settings to enable or disable, [contact the Government Digital Service (GDS) technical writing team][contact-email].
 
-If you are not sure which settings to enable or disable, [contact the GDS tech writers][contact-email].
-
-See the [PaaS tech docs config file][global-config-example] for an example `tech-docs.yml` file.
+See the [Platfom as a Service (PaaS) tech docs config file][global-config-example] for an example `tech-docs.yml` file.
 
 ## Default settings
 
-When you create your documentation project, the template creates a `tech-docs.yml` file with default settings.
-
-The following section defines these default settings and tells you how to enable and disable them.
+The following section defines the default settings in the `tech-docs.yml` file, and tells you how to enable and disable them.
 
 ### host
 
@@ -193,7 +188,7 @@ You can enable and disable the following additional settings in the `tech-docs.y
 
 ### api_path
 
-Define a path to an Open API V3 spec file. This can be a relative file path or a URI to a raw file.
+Define a path to an [Open API V3 spec file][openapi3]. This can be a relative file path or a URI to a raw file.
 
 ```yaml
 api_path: ./source/pets.yml
@@ -226,7 +221,7 @@ github_branch: source
 
 ### google_site_verification
 
-Adds a [Google Site Verification code] to the meta tags.
+Adds a [Google Site verification code] to the meta tags.
 
 ```yaml
 google_site_verification: TvDTuyvdstyusadrCSDrctyd
@@ -271,7 +266,7 @@ See [page expiry][expiry] for more information.
 
 ### source_urls
 
-Customise the URLs that the contribution banner links to. Only enable this if you have enabled [show_contribution_banner].
+If you've [enabled the contribution banner][show_contribution_banner], set source_urls to the URLs you want the contribution banner to link to.
 
 By default, "Report issue" links to raising a GitHub issue, but by modifying the `report_issue_url`, it can link to an email address or another page.
 

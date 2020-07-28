@@ -1,19 +1,19 @@
 ---
 title: Review content regularly
 weight: 30
-last_reviewed_on: 2019-12-04
-review_in: 4 months
+last_reviewed_on: 2020-07-01
+review_in: 1 year
 ---
 
 # Review content regularly
 
-Make it easier to keep documentation up to date by configuring the [page expiry notifier][daniel-github], Daniel the Manual Spaniel.
+Make it easier to keep documentation up to date by configuring the page expiry notifier, Daniel the Manual Spaniel.
 
 ## How it works
 
-Daniel the Manual Spaniel scans your documentation pages to see which pages are due for review, according to the `review_by` parameter in your documentation's `/api/pages.json`.
+Daniel[Daniel the Manual Spaniel][[daniel-github]] checks for pages that are due for review. It looks at the `review_by` dates in your `/api/pages.json` file, which is generated when you build your documentation.
 
-The Tech Docs Template calculates `review_by` from the page expiry parameters you set in the page frontmatter.
+The Tech Docs Template calculates `review_by` from the [page expiry parameters][review-in] you set in the page frontmatter.
 
 When `review_by` is in the past, the page is due for review, and Daniel the Manual Spaniel sends a Slack notification to the page owner:
 
@@ -22,23 +22,23 @@ When `review_by` is in the past, the page is due for review, and Daniel the Manu
 
 The page owner can be a Slack group or a Slack user. You can configure owners for:
 
-- the whole documentation, in the global configuration
-- individual pages, in the frontmatter of that page
+- the [whole documentation site][global-config] by editing the `config/tech-docs.yml` file
+- [individual pages][frontmatter] by editing the page frontmatter
 
 When defining the owners, frontmatter configuration overrides global configuration.
 
-Daniel the Manual Spaniel will continue notifying the page owner every day (except weekends!) until `review_by` is in the future.
+Daniel the Manual Spaniel will continue notifying the page owner every weekday until `review_by` is in the future.
 
 ## Requirements
 
-For Daniel the Maual Spaniel to be able to scan your documentation you must set:
+For Daniel the Manual Spaniel to be able to scan your documentation you must set:
 
 * page expiry parameters in the frontmatter
 * owners for your documentation
 
 ## Set up the page expiry notifier
 
-To get Daniel the Manual Spaniel to scan your documentation every day (except weekends!), [follow the instructions in the README][daniel-set-up].
+There's guidance on [setting up Daniel the Manual Spaniel to scan your documentation](daniel-set-up) in the alphagov/tech-docs-monitor GitHub repo.
 
 See an [example pull request to set up Daniel the Manual Spaniel][daniel-set-up-pr].
 

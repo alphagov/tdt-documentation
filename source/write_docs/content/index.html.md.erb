@@ -1,24 +1,24 @@
 ---
 title: Write your content
 weight: 41
-last_reviewed_on: 2019-10-03
-review_in: 1 day
+last_reviewed_on: 2020-07-01
+review_in: 1 year
 ---
 # Write your content
 
-You write your content in markdown when using the Tech Doc Template. You can use HTML as well where appropriate.
+You can write your content in Markdown or HTML when using the Tech Doc Template.
 
 ## Insert a table
 
-You can insert a table using either markdown or HTML.
+You can insert a table using either Markdown or HTML.
 
-Use markdown when there are no specific formatting requirements.
+Use Markdown when there are no specific formatting requirements.
 
 Use HTML when there are specific formatting requirements, for example to ensure that text in cells do not wrap.
 
-### Create table using markdown
+### Create table using Markdown
 
-Use markdown when there are no specific formatting requirements.
+Use Markdown when there are no specific formatting requirements.
 
 This example is a left-aligned table.
 
@@ -67,9 +67,9 @@ The following code is an example of a 2 column 2 row table with no text wrapping
 
 ## Create a link
 
-You can create links using either markdown or HTML.
+You can create links using either Markdown or HTML.
 
-To create a link in markdown, use the following:
+To create a link in Markdown, use the following:
 
 ```yaml
 [link text](link address)
@@ -98,10 +98,10 @@ You can write the link in HTML with a `target="blank"` element to make the link 
 To insert an image into your content, use the following:
 
 ```bash
-<%= image_tag "image location", { :alt => 'image alt text' } %>
+<%= image_tag "image file", { :alt => 'image alt text' } %>
 ```
 
-You must include alt text because of accessibility requirements.
+You must include alt text for an image if the image has not been explained in surrounding content, due to accessibility requirements.
 
 ## Insert a warning
 
@@ -115,14 +115,9 @@ To insert a warning, use the following:
 <%%= warning_text('insert warning text here') %>
 ```
 
-## Use the design system
+## Use the GOV.UK Design System
 
-Use [design system](https://design-system.service.gov.uk/) elements in your documentation to ensure your content complies with accessibility regulations. 
+Use [GOV.UK Design System](https://design-system.service.gov.uk/) elements in your documentation to ensure your content complies with accessibility regulations.
 
-## Further Information
-
-Refer to this [markdown cheat sheet on GitHub](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for more information.
-
-You can also write your content in [Govspeak](https://github.com/alphagov/govspeak). Govspeak is the UK government specific markdown-derived mark-up language.
 
 <%= partial "partials/links" %>
