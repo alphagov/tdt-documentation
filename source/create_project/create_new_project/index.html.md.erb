@@ -1,35 +1,36 @@
 ---
-title: "Create a new documentation project"
+title: Create a new documentation project
 weight: 22
-last_reviewed_on: 2019-10-03
-review_in: 1 day
+last_reviewed_on: 2020-07-01
+review_in: 1 year
 ---
 
 # Create a new documentation project
 
-1. Open the command line interface.
-
-1. Navigate to your documents folder.
+1. Open the command line interface and navigate to your documents folder.
 
 1. Run the following in the command line:
 
+    ```yaml
+    middleman init <project_name> -T alphagov/tech-docs-template
     ```
-    middleman init PROJECT_NAME -T alphagov/tech-docs-template
-    ```
-    where `PROJECT_NAME` is the name of your project.
+    where `<project_name>` is the name of your project.
 
 1. Answer the installation questions.
 
-1. Project creation is complete when you see `Bundle complete!`.
+1. When you see `Bundle complete!`, go to the new project folder and run `bundle install` to update the Ruby gems.
 
 ## Configure your new documentation project
+
+Configure your new documentation project by editing the `config/tech-docs.yml` in a text editor.
+
+Two common settings to enable are collapsible navigation and search.
 
 ### Enable collapsible navigation
 
 Add the following code to your project's `tech-docs.yml` file if necessary:
 
-```
-# Enable collapsible navigation in the sidebar
+```yaml
 collapsible_nav: true
 ```
 
@@ -39,13 +40,10 @@ The search function is especially useful for multipage documentation.
 
 Add the following code to your project’s `tech-docs.yml` file if necessary:
 
-```
-# Enable search
+```yaml
 enable_search: true
 ```
 
-## View your new documentation project
+See [configure documentation site][global-config] for more information.
 
-Navigate to the created documentation repo folder.
-
-The folder will have multiple pre-populated files. You will only need to amend the `/source` folder and the `config/tech-docs.yml` file.
+<%= partial "partials/links" %>

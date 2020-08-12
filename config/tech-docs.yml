@@ -35,15 +35,14 @@ github_repo: alphagov/tdt-documentation
 enable_search: true
 
 # Ownership for page reviews
-default_owner_slack: '#docs-repos'
+default_owner_slack: '#tech-writers'
 owner_slack_workspace: gds
 
 # Enable GOV.UK crown logo
 show_govuk_logo: false
 
 redirects:
-  page-expiry.html: review_project/page-expiry/index.html
-  search.html: amend_project/configuration/index.html
-  content.html: amend_project/content/index.html
-  create_new_project.html: create_project/create_new_project/index.html
-  single_page.html: create_project/single_page/index.html
+  page-expiry.html: configure_project/page_expiry_and_review/#set-review-date-for-pages
+  search.html: create_project/create_new_project/#enable-search
+  content.html: write_docs/content/#write-your-content
+  create_new_project.html: create_project/create_new_project/#create-a-new-documentation-project
