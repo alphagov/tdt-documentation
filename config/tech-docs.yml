@@ -12,7 +12,9 @@ header_links:
   Template: https://github.com/alphagov/tech-docs-template
   Ruby gem: https://github.com/alphagov/tech-docs-gem
   Support: /support
-
+footer_links:
+  Accessibility: /accessibility/
+  
 # Table of contents depth – how many levels to include in the table of contents.
 # If your ToC is too long, reduce this number and we'll only show higher-level
 # headings.
