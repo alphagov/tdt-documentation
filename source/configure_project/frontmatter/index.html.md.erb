@@ -56,6 +56,16 @@ weight: 20
 
 You can enable and disable the following optional settings in the page frontmatter.
 
+### description
+
+Sets the description for the page, which will be used in search engine results or on social media.
+
+```yaml
+---
+description: Configuring page settings in the GDS Technical Documentation Template.
+---
+```
+
 ### hide_in_navigation
 
 Set `hide_in_navigation: true` to prevent the page from being rendered in the main left hand navigation.
@@ -153,6 +163,16 @@ parent: shaving-yaks.html
 ---
 ```
 
+### prevent_indexing
+
+Set `prevent_indexing: true` to prevent the page from being indexed by search engines.
+
+```yaml
+---
+prevent_indexing: true
+---
+```
+
 ### source_url
 
 If the contribution banner is turned on, you can override the "View source" link using `source_url`.
@@ -172,6 +192,5 @@ The browser title of the page.
 title: My beautiful page
 ---
 ```
-
 
 <%= partial "partials/links" %>
