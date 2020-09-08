@@ -2,7 +2,7 @@
 host: https://tdt-documentation.london.cloudapps.digital/
 
 # Header-related options
-show_govuk_logo: true
+show_govuk_logo: false
 service_name: Tech docs template
 service_link: https://tdt-documentation.london.cloudapps.digital/
 phase: Beta
@@ -18,11 +18,6 @@ header_links:
 # headings.
 max_toc_heading_level: 1
 
-# Tracking ID from Google Analytics (e.g. UA-XXXX-Y)
-ga_tracking_id: UA-86101042-3
-
-google_site_verification: "IJ5HOXpZrISM6la-YO_iX0rBUC5YFftpexygcKLsNs4"
-
 # Multi-page options
 multipage_nav: true
 collapsible_nav: true
@@ -37,9 +32,6 @@ enable_search: true
 # Ownership for page reviews
 default_owner_slack: '#tech-writers'
 owner_slack_workspace: gds
-
-# Enable GOV.UK crown logo
-show_govuk_logo: false
 
 redirects:
   page-expiry.html: configure_project/page_expiry_and_review/#set-review-date-for-pages
