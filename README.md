@@ -4,10 +4,6 @@
 
 This repository is used to generate the [documentation website for the Tech Docs Template][tdt-docs] and uses the template itself.
 
-The Tech Docs Template is a [middleman template][mmt] that you can use to build technical documentation websites using a GOV.UK style.
-
-To find out more about setting up and managing content for a website using this template, see the [Tech Docs Template documentation](https://tdt-documentation.london.cloudapps.digital/).
-
 ## Publishing changes
 
 Travis CI automatically publishes changes merged into the master branch of this repository.
