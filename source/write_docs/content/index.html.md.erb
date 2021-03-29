@@ -22,27 +22,30 @@ Use Markdown when there are no specific formatting requirements.
 
 This example is a left-aligned table.
 
-You should include `<div style="height:1px;font-size:1px;">&nbsp;</div>` before and after each table.
-
 ```bash
-<div style="height:1px;font-size:1px;">&nbsp;</div>
-```
-```bash
-|Column header|Column header|
-|:---|:---|
-|content|content|
-|content|content|
-```
-```bash
-<div style="height:1px;font-size:1px;">&nbsp;</div>
+| Column header | Column header |
+|---------------|---------------|
+| content       | content       |
+| content       | content       |
 ```
 
-You can change the alignment of the text:
+Add more columns and rows as needed.
+
+You can also change the alignment of the text in each column:
 
 - Centre: `|:---:|`
 - Right: `|---:|`
 
-Add more columns and rows as needed.
+If a table has 3 or more columns, you might need to set a [row header](https://www.w3.org/WAI/tutorials/tables/) in addition to the column headers. Setting a row header improves the experience for screen reader users, as it reduces the amount of information they need to remember while navigating the table.
+
+Here is an example where the "city name" cell in each row is marked up as the row header:
+
+```bash
+| City name         | Population | Average age |
+|-------------------|------------|-------------|
+| # Some city       | 38000      | 48          |
+| # Some other city | 41000      | 37          |
+```
 
 ### Create table using HTML
 
