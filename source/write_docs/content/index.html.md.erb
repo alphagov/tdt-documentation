@@ -14,7 +14,7 @@ You can insert a table using either Markdown or HTML.
 
 Use Markdown when there are no specific formatting requirements.
 
-Use HTML when there are specific formatting requirements, for example to ensure that text in cells do not wrap.
+Use HTML when there are specific formatting requirements, for example to ensure that text in cells does not wrap.
 
 ### Create table using Markdown
 
@@ -31,14 +31,14 @@ This example is a left-aligned table.
 
 Add more columns and rows as needed.
 
-You can also change the alignment of the text in each column:
+You can change the alignment of the text in each column:
 
 - Centre: `|:---:|`
 - Right: `|---:|`
 
-If a table has 3 or more columns, you might need to set a [row header](https://www.w3.org/WAI/tutorials/tables/) in addition to the column headers. Setting a row header improves the experience for screen reader users, as it reduces the amount of information they need to remember while navigating the table.
+If a table has 3 or more columns, you might need to set row headers as well as column headers to improve accessibility. Using row headers reduces the amount of information screen reader users need to remember whilst using the table.
 
-Here is an example where the "city name" cell in each row is marked up as the row header:
+The following example has the first cell in each row marked up as the row header using the `#` character:
 
 ```bash
 | City name         | Population | Average age |
@@ -46,6 +46,8 @@ Here is an example where the "city name" cell in each row is marked up as the ro
 | # Some city       | 38000      | 48          |
 | # Some other city | 41000      | 37          |
 ```
+
+See the [Web Accessibility Initiative tutoral on table concepts](https://www.w3.org/WAI/tutorials/tables/) for more information.
 
 ### Create table using HTML
 
