@@ -7,82 +7,97 @@ review_in: 1 year
 
 # Enable and configure the cookie banner
 
-If you are planning on storing cookies in your project, you can enable the cookie banner to obtain user's consent prior to storing them.
+If you want to store cookies in your project, you can enable the cookie banner to obtain a user's consent before storing the cookies.
 
-The provided cookie banner is based on the [GOV.UK Design System cookie banner component](https://design-system.service.gov.uk/components/cookie-banner/).
+This cookie banner is based on the [GOV.UK Design System cookie banner component](https://design-system.service.gov.uk/components/cookie-banner/).
 
-### Required cookie banner settings
+## Required cookie banner settings
 
-To show the cookie banner and obtain the right consent for the cookies you're looking to store there are some required settings.
+To show the cookie banner and obtain the right cookie consent you must:
+
+- enable the cookie banner
+- set the cookie types to store
 
 ### Enable cookie banner
 
-To enable the cookie banner in your project, add the following lines to `config/tech-docs.yml` file:
+To enable the cookie banner in your project, add the following code to `config/tech-docs.yml` file:
 
 ```yaml
-cookie_banner: 
+cookie_banner:
   enable: true
 ```
 
-By default the cookie banner is not enabled. You also can turn off the cookie banner by setting `enable: false`.
+The cookie banner is not enabled by default. You can disable the cookie banner by setting `enable: false`.
 
-### cookie_types
+### Set cookie types
 
-Set the type or types of cookies you wish to store.
+You must set the type or types of cookie to store.
 
-This setting controls which cookie banner copy and button text is shown as described on the [GOV.UK Design System cookie banner component](https://design-system.service.gov.uk/components/cookie-banner/) page.
+Setting this also sets which cookie banner copy text and button text is shown to the user.
 
-`cookie_types` accepts an array with the following values
+To set the type or types of cookies to store, add the following code to `config/tech-docs.yml` file:
+
+```yaml
+cookie_banner:
+  cookie_types: ['<COOKIE TYPE>']
+```
+
+There are 3 types of cookie:
+
+- essential, with a cookie type of `essential`
+- analytics, with a cookie type of `analytics`
+- non-essential, with a cookie type of `additional`
+
+You can set one or multiple types of cookies to store. For example, to store all types of cookie:
 
 ```yaml
 cookie_banner:
   cookie_types: ['essential', 'analytics', 'additional']
 ```
-If you're only storing essential cookies, set `['essential']`.
 
-If you're storing essential and analytics cookies, set `['essential', 'analytics']`.
-
-If you’re storing more than one type of non-essential cookie, set `['essential', 'analytics', 'additional']`.
+See the [GOV.UK Design System cookie banner component](https://design-system.service.gov.uk/components/cookie-banner/) page for more information.
 
 ## Optional cookie banner settings
 
-Cookie banner component is set with some defaults for essential, analytics and additional cookies.
-All of them can be replaced with custom text.
+You can set the following optional cookie banner settings:
 
-### cookie_message_text
+- cookie banner message text
+- cookie page URL
 
-If you are storing non-essential cookies and wish to fully customise the text, you can create a multiline
-text, which will create new lines and paragarphs. This will replace all the default text.
+### Set cookie banner message text
+
+You can replace the default text in the cookie banner with custom text.
+
+Add the following code to `config/tech-docs.yml` file:
 
 ```yaml
 cookie_banner:
   cookie_message_text: |
-    Paragraph 1
-    New line in paragraph 1
-
-    Paragraph 2
+    <CUSTOM TEXT>
 ```
 
-### cookie_page_path
-
-Set a custom url to your cookies page. Default value is '/cookies'.
+You can create single or multiple paragraphs, and have line breaks inbetween the paragraphs. For example:
 
 ```yaml
+# Enable cookie banner
 cookie_banner:
-  cookie_page_path: /link-to-cookies-page
-```
-
-## All available configuration options
-
-Below are listed all the options for the cookie banner that can be set.
-
-```yaml
-cookie_banner: 
   enable: true
-  cookie_types: ['essential','analytics', 'additional']
+  cookie_types: ['essential', 'analytics']
   cookie_message_text: |
-    Paragraph 1
-    New line in paragraph 1
+    I love cookies
+    Chocolate chip are my favourite
 
-    Paragraph 2
+    I love ginger biscuits
+    I call them biscuits, not cookies
+```
+
+### Set cookie page URL
+
+You can set a custom URL for your cookie page. The default value is `'/cookies'`.
+
+Add the following code to `config/tech-docs.yml` file:
+
+```yaml
+cookie_banner:
+  cookie_page_path: <CUSTOM COOKIE PAGE URL>
 ```
