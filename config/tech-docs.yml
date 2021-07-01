@@ -32,7 +32,7 @@ github_repo: alphagov/tdt-documentation
 enable_search: true
 
 # Ownership for page reviews
-default_owner_slack: '#tech-writers'
+default_owner_slack: '#gds-technical-writing'
 owner_slack_workspace: gds
 
 redirects:
