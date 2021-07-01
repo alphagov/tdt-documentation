@@ -1,63 +1,57 @@
 ---
 title: Get started
 weight: 21
-last_reviewed_on: 2020-07-01
+last_reviewed_on: 2021-07-01
 review_in: 1 year
 ---
 
 # Get started
 
-The following instructions assume that you have a Mac laptop.
+You must install:
 
-You must set up the following on your local machine:
+- Xcode command line tools
+- Node.js
+- Ruby
+- Middleman
 
-- administrator rights
-- [Xcode command line interface tools][xcode]
-- [Ruby programming language][ruby]
-- [Middleman static site generator][middleman]
+## Install Xcode command line tools
 
-## Administrator rights on your laptop
+You should install the Xcode command line tools using your department's software centre if you have one.
 
-If you are a Government Digital Service (GDS) employee, raise a ticket on the [GDS Web Help Desk] to request administrator rights on your laptop.
-
-If you are not a GDS employee, follow your internal IT processes.
-
-## Install Xcode command line interface tools
+You can also install the tools manually.
 
 1. Go to [Apple Developer Downloads].
-1. Search for "Xcode".
-1. Select the appropriate __Command Line Tools (macOS x.x) for Xcode x.x__ and download the file.
-1. Install the file.
-
-If you have a software centre for your department, you should be able to install the Xcode command line tools through this software centre.
+2. Search for 'Xcode'.
+3. Select the appropriate __Command Line Tools (macOS x.x) for Xcode x.x__ for your version of macOS, and download the file.
+4. Install the file.
 
 ## Install Node.js
 
-You can install [Node.js][node] to any location on your local machine.
+You can install [Node.js][node] anywhere on your computer.
 
 ## Install Ruby
 
-You can install [Ruby][ruby] to any location on your local machine.
+You can install Ruby anywhere on your computer, using [Ruby Version Manager][rvm] (RVM).
 
-You can install Ruby in multiple ways, for example using [Ruby Version Manager][rvm] (RVM) or [rbenv]. These instructions assume you are using RVM.
+1. Run the following in the command line to install RVM:
 
-1. Run the following in the command line to install the ruby version manager:
-
-    ```yaml
+    ```shell
     \curl -sSL https://get.rvm.io | bash -s stable --ruby
     ```
 
-1. Check the [Ruby downloads page][ruby-downloads] for the latest version of Ruby.
+2. Go to the [Ruby downloads page][ruby-downloads] and get the version number of the most recent stable release.
 
-1. Run `rvm install ruby-x.x.x` to install the latest version of [Ruby][ruby], where `x.x.x` is the Ruby version number. For example, `rvm install ruby-2.6.1`.
+3. Run `rvm install ruby-x.x.x`, where `x.x.x` is the version number. For example, `rvm install ruby-3.0.1`.
+
+You can also install Ruby using other tools such as [rbenv].
 
 ## Install Middleman
 
-You can install [Middleman][middleman] to any location on your local machine.
+You can install [Middleman][middleman] anywhere on your computer.
 
 Run the following in the command line to install Middleman:
 
-```yaml
+```shell
 gem install middleman
 ```
 
