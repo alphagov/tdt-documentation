@@ -1,7 +1,7 @@
 ---
 title: Preview your documentation
 weight: 23
-last_reviewed_on: 2020-07-01
+last_reviewed_on: 2021-07-01
 review_in: 1 year
 ---
 
@@ -9,16 +9,18 @@ review_in: 1 year
 
 You can start a local web server to preview your documentation site.
 
-1. Run the following from inside your project folder:
+1. Go to your project folder and run the following in the command line:
 
     ```shell
     bundle exec middleman server
     ```
 
-    This command is not the same as `bundle exec middleman build`, which creates a static HTML file for each file in your documentation project `source` folder.
+    This will create HTML documentation files in the `source/build` folder, then start a local web server.
 
-1. Go to the local web server at `http://localhost:4567/` to preview your documentation.
+2. Go to the local web server at `http://localhost:4567/` to preview your documentation.
 
-1. Run `Ctrl-C` to stop the preview web server.
+Press `Ctrl-C` in the command line to stop the web server.
+
+You can also [build your documentation][build-your-docs] to create HTML files without starting a local web server.
 
 <%= partial "partials/links" %>
