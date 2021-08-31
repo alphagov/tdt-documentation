@@ -6,7 +6,7 @@ After you submit your issue, the technical writing team from Central Digital and
  
 ## What’s changed
 
-What are you trying to do? Is this something that changes how the Tech Docs Template behaves, or is it fixing a bug? 🐛
+<!-- What are you trying to do? Is this something that changes how the Tech Docs Template behaves, or is it fixing a bug? 🐛 -->
 
 
 ## Identifying a user need
