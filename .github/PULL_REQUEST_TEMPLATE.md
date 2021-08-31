@@ -11,5 +11,5 @@ After you submit your issue, the technical writing team from Central Digital and
 
 ## Identifying a user need
 
-Do you have evidence whether the change will meet the needs of users? Let us know about any user research or testing you’ve done.
+<!-- Do you have evidence whether the change will meet the needs of users? Let us know about any user research or testing you’ve done. -->
 
