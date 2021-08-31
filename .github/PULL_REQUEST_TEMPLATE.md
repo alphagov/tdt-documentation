@@ -1,6 +1,8 @@
+<!--
 ## Please fill in the sections below
 
 After you submit your issue, the technical writing team from Central Digital and Data Office (CDDO) will discuss and prioritise it at our fortnightly triage meeting. We’ll then let you know if and when we’ll move it forward.
+-->
  
 ## What’s changed
 
