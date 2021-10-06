@@ -1,6 +1,8 @@
 language: ruby
 cache: bundler
 script: bundle exec middleman build
+before_install:
+  - nvm install 14
 deploy:
   provider: cloudfoundry
   api: https://api.london.cloud.service.gov.uk
