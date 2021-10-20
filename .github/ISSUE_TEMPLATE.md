@@ -8,6 +8,6 @@ After you submit your issue, the technical writing team from the Central Digital
 
 <!-- What would fix the issue? Is this something you think should behave differently, or something that you currently cannot do? -->
 
-## User need
+## Identifying a user need
 
 <!-- Do you have evidence that the change will meet the needs of users? Let us know about any user research or testing you’ve done. -->
