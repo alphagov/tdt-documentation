@@ -1,0 +1,39 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+concurrency: production
+
+jobs:
+  deploy:
+    name: Deploy site
+    environment: production
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Build
+        run: bundle exec middleman build
+
+      - name: Deploy
+        uses: citizen-of-planet-earth/cf-cli-action@3c7cc1a77152f9157b0c33b32d3b2b5fbdc56dca
+        with:
+          cf_api: 'https://api.london.cloud.service.gov.uk'
+          cf_org: 'gds-tech-writers'
+          cf_space: 'sandbox'
+          cf_username: ${{ secrets.CF_USER }}
+          cf_password: ${{ secrets.CF_PASSWORD }}
+          command: cf push -f manifest.yml --strategy rolling

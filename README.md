@@ -1,12 +1,10 @@
 # Tech Docs Template Documentation
 
-[![Build Status](https://travis-ci.org/alphagov/tdt-documentation.svg?branch=master)](https://travis-ci.org/alphagov/tdt-documentation)
-
 This repository is used to generate the [documentation website for the Tech Docs Template][tdt-docs] and uses the template itself.
 
 ## Publishing changes
 
-Travis CI automatically publishes changes merged into the master branch of this repository.
+GitHub Actions automatically publishes changes merged into the master branch of this repository.
 
 ## Code of conduct
 
