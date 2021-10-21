@@ -36,4 +36,4 @@ jobs:
           cf_space: 'sandbox'
           cf_username: ${{ secrets.CF_USER }}
           cf_password: ${{ secrets.CF_PASSWORD }}
-          command: cf push -f manifest.yml --strategy rolling
+          command: push -f manifest.yml --strategy rolling
