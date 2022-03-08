@@ -283,4 +283,17 @@ source_urls:
   report_issue_url: mailto:support@example.com
 ```
 
+## Build your site using relative links
+
+You can configure the Technical Documentation Template (TDT) to build your documentation site using relative links to pages and assets.
+
+To use relative links, add the following lines to your `config.rb` file:
+
+```
+set :relative_links, true
+activate :relative_assets
+```
+
+
+
 <%= partial "partials/links" %>
