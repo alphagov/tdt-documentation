@@ -50,6 +50,7 @@ prevent_indexing: false
 
 show_contribution_banner: true
 github_repo: alphagov/YOUR_REPO
+github_branch: main
 ```
 
 <%= warning_text('All of these settings are optional. However, you should enable or disable settings to increase the usability of your documentation or because of best practice.') %>
@@ -190,6 +191,16 @@ Your documentation project's GitHub repository. You must enable this if you have
 github_repo: alphagov/example-repo
 ```
 
+### github_branch
+
+Your project's GitHub default branch name. You can change this if your default branch is not named main.
+
+```yaml
+github_branch: source
+```
+
+Note: When creating a project using the template this is set to "main", but if this setting is not present the default is currently "master". This will change in a future major release.
+
 ## Additional settings
 
 You can enable and disable the following additional settings in the `tech-docs.yml` file.
@@ -217,14 +228,6 @@ The full service name. Include "GOV.UK" if appropriate.
 
 ```yaml
 full_service_name: "GOV.UK Pay"
-```
-
-### github_branch
-
-Your project's GitHub master branch name. You can use this if your default branch is not named master.
-
-```yaml
-github_branch: source
 ```
 
 ### google_site_verification
