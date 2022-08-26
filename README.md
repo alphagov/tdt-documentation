@@ -4,7 +4,7 @@ This repository is used to generate the [documentation website for the Tech Docs
 
 ## Publishing changes
 
-GitHub Actions automatically publishes changes merged into the master branch of this repository.
+GitHub Actions automatically publishes changes merged into the main branch of this repository.
 
 ## Code of conduct
 
