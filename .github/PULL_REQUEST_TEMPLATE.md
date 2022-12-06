@@ -1,7 +1,7 @@
 <!--
 ## Please fill in the sections below
 
-After you submit your pull request, the tech docs template working group will discuss and prioritise it at our fortnightly triage meeting. We’ll then let you know if and when we’ll move it forward.
+After you submit your pull request, the Tech Docs Template working group will discuss and prioritise it at our fortnightly triage meeting. We’ll then let you know if and when we’ll move it forward.
 -->
 
 ## What’s changed
