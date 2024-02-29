@@ -1,6 +1,6 @@
 # Tech Docs Template Documentation
 
-This repository is used to generate the [documentation website for the Tech Docs Template][tdt-docs] and uses the template itself.
+This repository was previously used to generate the [documentation website for the Tech Docs Template][tdt-docs]. Following the decommissioning of PaaS that site is no longer live. The documentation remains available in this git repository, although it is no longer maintained.
 
 ## Publishing changes
 
