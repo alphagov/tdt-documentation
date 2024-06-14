@@ -22,7 +22,7 @@ Your OpenAPI file must be both:
     api_path: <OPENAPI_FILE>
     ```
 
-    where `<OPENAPI_FILE>` is your OpenAPI file, for example `/openapi/openapi.yaml`.
+   where `<OPENAPI_FILE>` is your OpenAPI file, for example `/openapi/openapi.yaml`.
 
 2. Add the following in your documentation to convert the OpenAPI file into an API reference:
 
@@ -37,12 +37,32 @@ For `api_path` you can also use:
 
 ## Convert a specific endpoint
 
-You can convert a specific endpoint using the following in your documentation: 
+You can convert a specific endpoint using the following in your documentation:
 
 ```markdown
 api> <ENDPOINT>
 ```
 
 where `<ENDPOINT>` is your endpoint, for example `/pets`.
+
+## Convert a specific operation
+
+You can convert a single operation on a specific endpoint by using the following in your documentation:
+
+```markdown
+api_operation> <ENDPOINT> <OPERATION>
+```
+
+where `<OPERATION>` is the HTTP operation, for example `get` or `post`
+
+## Convert a schema object
+
+You can convert a single schem object by using the following in your documentation:
+
+```markdown
+api_schema> <OBJECT>
+```
+
+where `<OBJECT>` is the name of the schema object, for example `PetResponse`
 
 <%= partial "partials/links" %>
