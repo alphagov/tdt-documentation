@@ -9,7 +9,7 @@ COPY ./Gemfile /usr/src/gems
 COPY ./Gemfile.lock /usr/src/gems
 COPY ./.ruby-version /usr/src/gems
 
-RUN apt-get update && apt-get install -y nodejs
+RUN apt-get update && apt-get install -y nodejs && apt-get install -y npm
 
 RUN bundle config set force_ruby_platform true
 
