@@ -1,0 +1,29 @@
+name: Check pull request
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - ready_for_review
+      - synchronize
+
+jobs:
+  check-pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # pin@v4
+      - name: Install Ruby
+        uses: ruby/setup-ruby@d4526a55538b775af234ba4af27118ed6f8f6677 # pin@v1
+        with:
+          bundler-cache: true
+      - name: setup python
+        uses: actions/setup-python@65d7f2d534ac1bc67fcd62888c5f4f3d2cb2b236 # pin@v4
+      - name: install linter
+        run: pip install vale==3.0.7
+      - name: Vale configuration
+        run: vale sync
+      - name: Build
+        run: bundle exec middleman build --verbose
+      - name: Vale check
+        run: vale source/
