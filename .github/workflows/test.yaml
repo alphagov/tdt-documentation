@@ -20,5 +20,8 @@ jobs:
         with:
           bundler-cache: true
 
+      - name: Install gems
+        run: bundle install
+
       - name: Build
         run: bundle exec middleman build
