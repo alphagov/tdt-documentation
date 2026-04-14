@@ -8,15 +8,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v6
         with:
-          node-version: '14'
+          show-progress: false
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: '.nvmrc'
 
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
+
+      - name: Install gems
+        run: bundle install
 
       - name: Build
         run: bundle exec middleman build
