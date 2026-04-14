@@ -4,7 +4,7 @@ require 'govuk_tech_docs'
 
 # require 'html-proofer'
 
-# GovukTechDocs.configure(self, livereload: { js_host: "localhost" })
+GovukTechDocs.configure(self, livereload: { js_host: "localhost" })
 
 # after_build do |builder|
 #   begin
