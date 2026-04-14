@@ -335,7 +335,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  govuk_tech_docs (= 6.1.0)
+  govuk_tech_docs
   html-proofer
   middleman-gh-pages
   tzinfo-data
