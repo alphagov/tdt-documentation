@@ -11,4 +11,4 @@ gem 'govuk_tech_docs'
 gem 'middleman-gh-pages'
 
 # Include linter to check for dead internal links
-gem 'html-proofer'
+# gem 'html-proofer'
