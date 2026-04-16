@@ -1,27 +1,41 @@
-name: Test
+name: Build and test
 
-on: [push, pull_request]
+on:
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+    inputs:
+      upload-artifact:
+        default: false
+        required: false
+        type: boolean
 
 jobs:
-  test:
-    name: Test
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v6
-        with:
-          show-progress: false
+    - uses: actions/checkout@6
+      with:
+        fetch-depth: 0
 
-      - uses: actions/setup-node@v6
-        with:
-          node-version-file: '.nvmrc'
+    - uses: actions/setup-node@v6
+      with:
+        node-version-file: '.nvmrc'
 
-      - uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
+    - uses: ruby/setup-ruby@v1
+      with:
+        bundler-cache: true
 
-      - name: Install gems
-        run: bundle install
+    - name: Install gems
+      run: bundle install
 
-      - name: Build
-        run: bundle exec middleman build
+    - name: Build
+      run: bundle exec middleman build
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v4.1.3
+      if: ${{ inputs.upload-artifact }}
+      with:
+        name: build
+        path: build/**
+        retention-days: 1
