@@ -8,7 +8,7 @@ service_link: https://tdt-documentation.london.cloudapps.digital/
 phase: Beta
 
 # Uncomment if you do not want to activate the GOV.UK Design System component extension
-# enable_govuk_components: false
+enable_govuk_components: true
 
 # Links to show on right-hand-side of header
 header_links:
