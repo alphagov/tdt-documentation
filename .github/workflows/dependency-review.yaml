@@ -1,5 +1,9 @@
 name: 'Dependency Review'
 on:
+  push:
+    branches: [ "**" ]      # Run on every push to every branch
+    pull_request:
+      branches: [ "main" ] # Run on PRs targeting main
   workflow_dispatch:
   workflow_call:
 
