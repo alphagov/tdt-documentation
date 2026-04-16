@@ -11,7 +11,10 @@ on:
         type: boolean
 
 jobs:
+  call-test-workflow:
+    uses: ./.github/workflows/dependency-review.yml
   build:
+    needs: dependency-review
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v6

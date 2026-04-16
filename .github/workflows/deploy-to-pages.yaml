@@ -20,7 +20,7 @@ jobs:
     with:
       upload-artifact: true
   deploy:
-    needs: [build, dependency-review]
+    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
