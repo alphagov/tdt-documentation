@@ -14,7 +14,7 @@ on:
 
 jobs:
   call-test-workflow:
-    uses: ./.github/workflows/dependency-review.yml
+    uses: ./.github/workflows/dependency-review.yaml
   build:
     needs: dependency-review
     runs-on: ubuntu-latest
