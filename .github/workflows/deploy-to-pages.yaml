@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: 'Deploy to GitHub Pages'
 on:
   push:
     branches: ["main"]
@@ -14,12 +14,12 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  run-tests:
     uses: ./.github/workflows/test.yaml
     with:
       upload-artifact: true
   deploy:
-    needs: build
+    needs: run-tests
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

@@ -1,5 +1,4 @@
-name: Build and test
-
+name: 'Build and test'
 on:
   pull_request:
   push:
@@ -13,10 +12,10 @@ on:
         type: boolean
 
 jobs:
-  call-test-workflow:
+  run-dependency-review:
     uses: ./.github/workflows/dependency-review.yaml
   build:
-    needs: dependency-review
+    needs: run-dependency-review
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v6
