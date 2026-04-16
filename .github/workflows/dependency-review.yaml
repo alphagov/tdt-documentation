@@ -1,6 +1,5 @@
 name: 'Dependency Review'
 on:
-  push:
   workflow_dispatch:
   workflow_call:
 
