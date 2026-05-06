@@ -2,6 +2,8 @@ name: 'Build and test'
 on:
   pull_request:
     branches: [ "main" ] # Run on PRs targeting main
+  push:
+    branches: [ "main" ]
   workflow_dispatch:
   workflow_call:
     inputs:
